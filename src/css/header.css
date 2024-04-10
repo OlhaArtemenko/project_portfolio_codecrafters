@@ -1,0 +1,35 @@
+.header {
+position: absolute;
+left: 0;
+right: 0;
+margin: 0 auto;
+max-width: 1440px;
+}
+
+/* =========================MOBILE HEADER STELES============================ */
+/* .header-menu {
+    display: none;
+}
+
+.header-button {
+    display: none;
+}
+
+.header-div {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 169px;
+}
+
+.header-text-logo {
+margin-left: 8px;    
+}
+
+.header-burger-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    stroke: black;
+    line-height: 0;
+    margin-left: 143px;
+} */
