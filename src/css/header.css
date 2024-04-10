@@ -7,7 +7,6 @@
 }
 
 .header-container {
-margin-top: 32px;
 display: flex;
 }
 
@@ -39,7 +38,6 @@ height: 19px;
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
 
-  
 .menu-btn-desctab {
 display: none;
 }
