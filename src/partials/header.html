@@ -5,13 +5,35 @@
 
      <div class="header-logo-container">
     <a href="index.html">
+      <picture>
+        <source
+          srcset="
+            ../img/desctop/header/desk_header_logo.png       1x,
+            ../img/desctop/header/desk_header_logo@2x.png    2x
+          "
+          media="(min-width: 1158px)"
+        />
+
+        <source
+          srcset="
+          ../img/tablet/header/tab_header_photo_logo.png       1x,
+          ../img/tablet/header/tab_header_photo_logo@2x.png    2x
+          "
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="
+          ../img/mobile/header/header_photo_logo.png       1x,
+          ../img/mobile/header/header_photo_logo@2x.png    2x
+          "
+          media="(max-width: 767px)"
+        />
         <img
-        srcset="./src/img/mobile/header/header_photo_logo@2x.png 2x"
-        src=".src/img/mobile/header/header_photo_logo.png"
-        alt="logo header"
-        width="80"
-        height="80"
+        src="../img/mobile/header/header_photo_logo.png"
+        alt="Header logo"
       />
+    </picture>
     </a>
 
     <p class="header-text-logo">jefferson*</p>  
@@ -49,7 +71,7 @@
           height="8.17"
           aria-label="header burger btn icon"
         >
-          <use href="./src/img/sprite.svg#icon-menu-open"></use>
+          <use href="../img/sprite.svg#icon-menu-open"></use>
         </svg>
      </button>
 
