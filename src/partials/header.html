@@ -1,0 +1,74 @@
+<header class="header">
+  <div class="container header-container">
+    <div class="header-logo-container">
+      <a href="index.html">
+        <picture>
+          <source
+            srcset="
+              ../img/desktop/header/desk_header_logo.png    1x,
+              ../img/desktop/header/desk_header_logo@2x.png 2x
+            "
+            media="(min-width: 1440px)"
+          />
+
+          <source
+            srcset="
+              ../img/tablet/header/tab_header_photo_logo.png    1x,
+              ../img/tablet/header/tab_header_photo_logo@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+
+          <source
+            srcset="
+              ../img/mobile/header/header_photo_logo.png    1x,
+              ../img/mobile/header/header_photo_logo@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            src="../img/desktop/header/desk_header_logo.png"
+            alt="Header logo"
+            width="80"
+            height="80"
+          />
+        </picture>
+        <p class="header-text-logo">jefferson*</p>
+      </a>
+    </div>
+
+    <div class="header-menu-container">
+      <div class="header-menu">
+        <button class="menu-btn-desctab" type="button">Menu</button>
+
+        <ul class="header-menu-list visually-hidden">
+          <li class="header-menu-item">
+            <a href="#about-me">About me</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="#benefits">Benefits</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="#faq">FAQ</a>
+          </li>
+        </ul>
+      </div>
+
+      <a href="#footer" class="header-button-link">Order the project</a>
+    </div>
+
+    <button type="button" class="header-burger-btn">
+      <svg
+        class="header-burger-btn-icon"
+        width="21"
+        height="8.17"
+        aria-label="header burger btn icon"
+      >
+        <use href="../img/sprite.svg#icon-menu-open"></use>
+      </svg>
+    </button>
+  </div>
+</header>
