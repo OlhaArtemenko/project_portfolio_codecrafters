@@ -112,6 +112,11 @@ text-align: left;
 background: rgb(237, 59, 68);
 letter-spacing: -0.02em;
 }
+
+.header-button-link:hover {
+background: rgb(198, 42, 45);
+}
+
 }
 
 /* ======================== desktop HEADER STYLES ========================= */
@@ -154,6 +159,11 @@ text-align: left;
 background: rgb(237, 59, 68);
 letter-spacing: -0.02em;
 }
+
+.header-button-link:hover {
+background: rgb(198, 42, 45);
+}
+
 
 .menu-btn-desctab {
 display: block;
