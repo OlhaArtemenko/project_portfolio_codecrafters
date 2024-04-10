@@ -1,26 +1,48 @@
 
 <header class="header">
-<div class="header-container container">
 
-    <div class="header-div">
+  <div class="container header-container">
 
-<div class="header-logo-container">
+     <div class="header-logo-container">
     <a href="index.html">
         <img
         srcset="./src/img/mobile/header/header_photo_logo@2x.png 2x"
-        src="./src/img/mobile/header/header_photo_logo.png"
+        src=".src/img/mobile/header/header_photo_logo.png"
         alt="logo header"
         width="80"
         height="80"
       />
-    
-    <p class="header-text-logo">jefferson*</p>
     </a>
-</div>
 
-    <a href="" class="header-menu">Menu</a>
-    
-    <button type="button" class="header-burger-btn">
+    <p class="header-text-logo">jefferson*</p>  
+     </div>
+
+     <div class="header-menu-container">
+
+          <div class="header-menu">
+            <button class="menu-btn-desctab" type="button">Menu</button>
+
+              <ul class="header-menu-list  visually-hidden">
+                <li class="header-menu-item">
+                  <a href="#about-me">About me</a>
+                </li>
+                <li class="header-menu-item">
+                  <a href="#benefits">Benefits</a>
+                </li>
+                <li class="header-menu-item">
+                  <a href="#projects">Projects</a>
+                </li>
+                <li class="header-menu-item">
+                  <a href="#faq">FAQ</a>    
+                </li>
+              </ul>
+          </div>
+          
+          <a href="#footer" class="header-button-link">Order the project</a>
+
+     </div>
+
+     <button type="button" class="header-burger-btn">
         <svg
           class="header-burger-btn-icon"
           width="21"
@@ -29,42 +51,8 @@
         >
           <use href="./src/img/sprite.svg#icon-menu-open"></use>
         </svg>
-      </button>
+     </button>
 
-    
-      <a href="#footer" class="header-button">Order the project</a>
-        
-     </div>
-</div>
- 
-
-<!--------------------------------MOBILE MENU-------------------------------->
-
-
-<div class="mobile-menu visually-hidden">
-    <div class="mobile-menu-container container">
-
-        <ul class="mobile-menu-list">
-
-            <li class="mobile-menu-item">
-                <a href="#about-me">About me</a>
-            </li>
-            <li class="mobile-menu-item">
-                <a href="#benefits">Benefits</a>
-            </li>
-            <li class="mobile-menu-item">
-                <a href="#projects">Projects</a>
-            </li>
-            <li class="mobile-menu-item">
-                <a href="#faq">FAQ</a>
-            </li>
-        </ul>
-
-        <a href="#footer" class="header-button">Order the project</a>
-
-    </div>
-</div>
-
-
+  </div>
 
 </header>
