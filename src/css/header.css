@@ -1,10 +1,11 @@
 .header {
- /* position: absolute; */
- margin: 0 auto;
- max-width: 1440px;
- left: 0;
- right: 0;
-}
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: transparent;
+  }
 
 .header-container {
 display: flex;
@@ -19,7 +20,7 @@ display: flex;
 }
 
 .header-text-logo {
-    color: rgb(250, 250, 250);
+color: rgb(250, 250, 250);
 font-family: Inter Tight;
 font-size: 20px;
 font-weight: 500;
@@ -47,7 +48,6 @@ display: none;
 
 
 .header-container {
-margin-top: 32px;
 width: 704px;
 display: flex;
 }
@@ -64,7 +64,6 @@ flex: none;
 flex-grow: 0;
 margin-left: 143px;
 }
-
 }
 
 /* ======================== TABLET HEADER STYLES ========================= */
@@ -94,7 +93,6 @@ text-decoration: underline;
 }
 
 
-
 .header-button-link {
 position: static;
 width: 163px;
@@ -120,9 +118,6 @@ letter-spacing: -0.02em;
 
 
   @media screen and (min-width: 1440px) {
-.container {
-padding: 0;
-}
 
 .header-burger-btn {
 display: none;
@@ -172,7 +167,4 @@ margin-left: 487px;
 margin-right: 487px;
 text-decoration: underline;
 }
-
 }
-
-  
