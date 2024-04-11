@@ -1,0 +1,158 @@
+<section class="section about-me" id="about-me">
+  <div class="container about-container">
+    <h2 class="visually-hidden">About me</h2>
+    <div class="elements-container">
+      <div class="title-with-photo">
+        <div class="title">
+          <p class="title-text">
+            I work with people all over the world to create impressive and
+            <span class="title-func">functional</span>
+            <span class="title-web">websites</span> that reflect each client's
+            unique personality.
+          </p>
+        </div>
+        <div class="photo-about-me">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/desktop/about-me/desk_about-me.webp    1x,
+                ./img/desktop/about-me/desk_about-me@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/tablet/about-me/tab_about-me.webp     1x,
+                ./img/tablet/about-me/tab_about-me.@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width:767px)"
+              srcset="
+                ./img/mobile/about-me/about_me_photo.webp    1x,
+                ./img/mobile/about-me/about_me_photo@2x.webp
+              "
+              type="image/webp"
+            />
+            <img
+              class="about-image"
+              src="./img/mobile/about-me/about_me_photo.webp 1x,"
+              alt="mine-photo"
+            />
+          </picture>
+        </div>
+      </div>
+
+      <!-- ---------------------ACCORDION-------------- -->
+      <div class="accordion-info-about-me">
+        <ul class="accordion-info-list">
+          <li class="accordion-info-item">
+            <h3 class="accordion-info-item-titel">About me</h3>
+
+            <button class="accordion-button-up-down" type="button">
+              <svg>
+                <use
+                  href="./img/sprite.svg#icon-arrow-bottom"
+                  width="20"
+                  height="20"
+                ></use>
+              </svg>
+            </button>
+
+            <div class="ac-panel-info-item-descr">
+              <p class="ac-panel-info-item-text">
+                I am Lloyd Jefferson, a talented programmer with extensive
+                expertise in software development. I have an understanding of
+                different programming languages and technologies, always ready
+                to improve my skills. I always follow the latest trends and look
+                for unconventional, creative solutions to problems. I have a
+                high level of analytical skills and am able to effectively solve
+                even the most difficult tasks encountered on the way.
+              </p>
+              <p class="ac-panel-info-item-text">
+                Able to work both independently and in a team. I can effectively
+                cooperate with colleagues, exchanging ideas and finding optimal
+                solutions. Professional maturity allows you to calmly cope with
+                challenges and stressful situations, while maintaining a high
+                quality of work. I am always looking for opportunities for
+                self-improvement. I actively study new technologies and
+                practices to stay abreast of the latest innovations. I have a
+                strong understanding of various programming languages,
+                frameworks and architectural concepts that allow me to create
+                efficient and scalable software.
+              </p>
+            </div>
+          </li>
+
+          <li class="accordion-info-item">
+            <h3 class="accordion-info-item-titel">Role</h3>
+
+            <button class="accordion-button-up-down" type="button">
+              <svg>
+                <use
+                  href="../img/sprite.svg#icon-arrow-bottom"
+                  width="20"
+                  height="20"
+                ></use>
+              </svg>
+            </button>
+
+            <div class="ac-panel-info-item-descr">
+              <p class="ac-panel-info-item-text">Frontend development</p>
+              <p class="ac-panel-info-item-text">HeadlessCMS,Wordpress</p>
+              <p class="ac-panel-info-item-text">Blender(enjoy)</p>
+            </div>
+          </li>
+
+          <li class="accordion-info-item">
+            <h3 class="accordion-info-item-titel">Education</h3>
+
+            <button class="accordion-button-up-down" type="button">
+              <svg class="accordion-about-me-svg">
+                <use
+                  href="./img/sprite.svg#icon-arrow-bottom"
+                  width="20"
+                  height="20"
+                ></use>
+              </svg>
+            </button>
+
+            <div class="ac-panel-info-item-descr">
+              <p class="ac-panel-info-item-text">
+                2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+                York
+              </p>
+              <p class="ac-panel-info-item-text">
+                2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+                School, New York
+              </p>
+              <p class="ac-panel-info-item-text">
+                2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ---------------------SWIPER----------------- -->
+      <div class="swiper-container">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">HTML/CSS</li>
+          <li class="swiper-slide">JavaScrip</li>
+          <li class="swiper-slide">React</li>
+          <li class="swiper-slide">Node.js</li>
+          <li class="swiper-slide">React Native</li>
+          <li class="swiper-slide">Soft skills</li>
+        </ul>
+        <button class="swiper-button-next" aria-label="next skill">
+          <svg class="about-me-next-icon-btn" width="28" height="28">
+            <use href="../img/sprite.svg#icon-arrow-narrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

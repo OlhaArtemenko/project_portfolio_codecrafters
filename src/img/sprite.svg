@@ -8,8 +8,8 @@
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M13.333 24l-8-8 8-8"></path>
 </symbol>
 <symbol id="icon-arrow-narrow-right" viewBox="0 0 32 32">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M5.333 16h21.333"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M18.667 8l8 8-8 8"></path>
+<path fill="none" d="M6.66699 20H33.3336" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<path fill="none" d="M23.333 10L33.333 20L23.333 30" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 </symbol>
 <symbol id="icon-arrow-top" viewBox="0 0 32 32">
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.2" d="M24 20l-8-8-8 8"></path>
