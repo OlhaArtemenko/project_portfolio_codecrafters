@@ -44,6 +44,15 @@
   padding: 0 0 20px 0;
   resize: none;
 }
+.input-footer:hover {
+  border-color: #FAFAFA;
+}
+.input-footer:user-valid {
+  border-color: #3CBC81;
+}
+.input-footer:user-invalid {
+  border-color: #E74A3B;
+}
 .input-footer::placeholder {
   font-size: 16px;
   font-weight: 500;
@@ -51,6 +60,9 @@
   letter-spacing: -0.02em;
   text-align: left;
   color: #fafafa99;
+}
+.input-footer:hover::placeholder {
+  color: #FAFAFA;
 }
 .form-button {
   font-size: 16px;
@@ -64,6 +76,9 @@
   height: 100px;
   border: none;
   border-radius: 50%;
+}
+.form-button:hover {
+  background: #E0373F;
 }
 .contacts-footer {
   margin-top: 80px;
@@ -80,6 +95,9 @@
   gap: 10px;
   border-radius: 60px;
   border: 1px solid #fafafa33;
+}
+.container-contacts:hover {
+  border-color: #FAFAFA;
 }
 .contacts-footer-mini {
   font-size: 14px;
