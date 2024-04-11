@@ -1,180 +1,166 @@
 .header {
-    position: absolute;
-    top: 32px;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-    background-color: transparent;
-  }
+  position: absolute;
+  top: 32px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: transparent;
+}
 
 .header-container {
-display: flex;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
-
-.header-logo-container {
-display: flex;
-}
-
-.header-logo-link {
-display: flex;
+.menu-btn-desctab {
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  width: 60px;
+  height: 39px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  margin-left: 151px;
+  margin-right: 151px;
+  text-decoration: underline;
 }
 
 .header-text-logo {
-color: rgb(250, 250, 250);
-font-family: Inter Tight;
-font-size: 20px;
-font-weight: 500;
-line-height: 24px;
-letter-spacing: -2%;
-text-align: left;
-margin-left: 8px;
-width: 84px;
-height: 19px;
+  color: rgb(250, 250, 250);
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.02em;
 }
 
+.header-logo-link {
+  display: flex;
+  gap: 8px;
+}
+
+.header-menu {
+  display: none;
+}
+.header-burger-btn {
+  fill: rgb(250, 250, 250);
+  background-color: transparent;
+  border: none;
+  position: static;
+  width: 28px;
+  height: 28px;
+  flex: none;
+  flex-grow: 0;
+}
 
 /* ========================== MOBILE HEADER STYLES ========================= */
 
-
 @media screen and (min-width: 320px) and (max-width: 767px) {
-
-
-.menu-btn-desctab {
-display: none;
-}
-.header-button-link {
-display: none;
-}
-
-
-.header-container {
-width: 704px;
-display: flex;
-}
-
-
-.header-burger-btn {
-fill: rgb(250, 250, 250);
-background-color: transparent;
-border: none;
-position: static;
-width: 28px;
-height: 28px;
-flex: none;
-flex-grow: 0;
-margin-left: 143px;
-}
+  .menu-btn-desctab {
+    display: none;
+  }
+  .header-button-link {
+    display: none;
+  }
 }
 
 /* ======================== TABLET HEADER STYLES ========================= */
 
-
 @media screen and (min-width: 768px) and (max-width: 1439px) {
+  .header-menu {
+    display: flex;
+  }
 
-.header-burger-btn {
-display: none;
-}
+  .header-burger-btn {
+    display: none;
+  }
 
-.header-menu-container {
-display: flex;
-}
+  .header-menu-container {
+    display: flex;
+  }
 
-.menu-btn-desctab {
-display: block;
-padding: 10px;
-background-color: transparent;
-border: none;
-width: 60px;
-height: 39px;
-color: #FAFAFA;
-margin-left: 151px;
-margin-right: 151px;
-text-decoration: underline;
-}
+  .header-button-link {
+    position: static;
+    width: 163px;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 24px 18px 24px;
+    border-radius: 60px;
+    color: rgb(250, 250, 250);
+    font-family: Inter Tight;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: left;
+    background: rgb(237, 59, 68);
+    letter-spacing: -0.02em;
+  }
 
-
-.header-button-link {
-position: static;
-width: 163px;
-height: 55px;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 18px 24px 18px 24px;
-border-radius: 60px;
-color: rgb(250, 250, 250);
-font-family: Inter Tight;
-font-size: 16px;
-font-weight: 500;
-line-height: 19px;
-text-align: left;
-background: rgb(237, 59, 68);
-letter-spacing: -0.02em;
-}
-
-.header-button-link:hover {
-background: rgb(198, 42, 45);
-}
-
+  .header-button-link:hover {
+    background: rgb(198, 42, 45);
+  }
 }
 
 /* ======================== desktop HEADER STYLES ========================= */
 
+@media screen and (min-width: 1440px) {
+  .header-burger-btn {
+    display: none;
+  }
+  .menu-btn-desctab {
+    display: none;
+  }
+  .header-menu {
+    display: flex;
+  }
+  .header-menu-container {
+    display: flex;
+  }
 
-  @media screen and (min-width: 1440px) {
+  .header-container {
+    width: 1372px;
+  }
 
-.header-burger-btn {
-display: none;
-}
+  .header-button-link {
+    position: static;
+    width: 163px;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 24px 18px 24px;
+    border-radius: 60px;
+    color: rgb(250, 250, 250);
+    font-family: Inter Tight;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: left;
+    background: rgb(237, 59, 68);
+    letter-spacing: -0.02em;
+  }
 
-.menu-btn-desctab {
-display: none;
-}
+  .header-button-link:hover {
+    background: rgb(198, 42, 45);
+  }
 
-.header-menu-container {
-display: flex;
-}
-    
-.header-container {
-width: 1372px;
-}
-
-.header-button-link {
-position: static;
-width: 163px;
-height: 55px;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 18px 24px 18px 24px;
-border-radius: 60px;
-color: rgb(250, 250, 250);
-font-family: Inter Tight;
-font-size: 16px;
-font-weight: 500;
-line-height: 19px;
-text-align: left;
-background: rgb(237, 59, 68);
-letter-spacing: -0.02em;
-}
-
-.header-button-link:hover {
-background: rgb(198, 42, 45);
-}
-
-
-.menu-btn-desctab {
-display: block;
-padding: 10px;
-background-color: transparent;
-border: none;
-width: 60px;
-height: 39px;
-color: #FAFAFA;
-margin-left: 487px;
-margin-right: 487px;
-text-decoration: underline;
-}
+  .menu-btn-desctab {
+    display: block;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    width: 60px;
+    height: 39px;
+    color: #fafafa;
+    margin-left: 487px;
+    margin-right: 487px;
+    text-decoration: underline;
+  }
 }
