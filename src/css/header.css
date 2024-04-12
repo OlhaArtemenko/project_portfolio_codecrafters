@@ -147,26 +147,34 @@
     background: rgb(198, 42, 45);
   }
 
+  .header-menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999999;
+    width: 375px;
+    height: 812px;
+    background-color: #1C1D20;
+    background-size: cover;
+    background-image: url(/img/mobile/hero/modal-back.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
+}
+    
     .header-menu-container.is-open {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 999999999;
-      width: 375px;
-      height: 812px;
-      background-color: #1C1D20;
-      background-size: cover;
-      background-image: url("../img/mobile/hero/modal-back.webp");
-      background-repeat: no-repeat;
-      background-position: center;
-      margin: 0;
-      padding: 0;
       transform: translateX(0%);
       opacity: 1;
       visibility: visible;
       pointer-events: auto;
-    }
-    
+  }
+
     @media screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx),
       screen and (min-device-pixel-ration: 2) {
