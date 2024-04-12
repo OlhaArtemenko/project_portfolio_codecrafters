@@ -23,7 +23,7 @@
     <script type="module" crossorigin src="/project_portfolio_codecrafters/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project_portfolio_codecrafters/assets/vendor-72ae1e75.js">
     <link rel="stylesheet" href="/project_portfolio_codecrafters/assets/vendor-f53b51ae.css">
-    <link rel="stylesheet" href="/project_portfolio_codecrafters/assets/index-3c5378ac.css">
+    <link rel="stylesheet" href="/project_portfolio_codecrafters/assets/index-dda8b87a.css">
   </head>
 
   <body>
@@ -52,7 +52,16 @@
     <div class="header-menu-container">
       <div class="header-menu">
         <button class="menu-btn-desctab" type="button">Menu</button>
-        
+        <button type="button" class="menu-btn-close visually-hidden">
+          <svg
+            class="menu-btn-icon-close"
+            width="28"
+            height="28"
+            aria-label="menu btn icon close"
+          >
+            <use href="../img/sprite.svg#icon-x-close"></use>
+          </svg>
+        </button>
   <ul class="header-menu-list">
     <li class="header-menu-item ">
       <a href="#about-me" class="header-menu-item-link">About me</a>
@@ -67,10 +76,9 @@
       <a href="#faq" class="header-menu-item-link">FAQ</a>
     </li>
   </ul>
-
       </div>
 
-      <a href="#footer" class="header-button-link">Order the project</a>
+      <a href="#footer" class="header-button-link btn-link-none">Order the project</a>
     </div>
 
     <button type="button" class="header-burger-btn">
