@@ -48,13 +48,13 @@
 margin-bottom: 16px;
 }
 .input-footer:hover {
-  border-color: #FAFAFA;
+  border-color: #fafafa;
 }
 .input-footer:user-valid {
-  border-color: #3CBC81;
+  border-color: #3cbc81;
 }
 .input-footer:user-invalid {
-  border-color: #E74A3B;
+  border-color: #e74a3b;
 }
 .input-footer::placeholder {
   font-size: 16px;
@@ -65,7 +65,7 @@ margin-bottom: 16px;
   color: #fafafa99;
 }
 .input-footer:hover::placeholder {
-  color: #FAFAFA;
+  color: #fafafa;
 }
 .form-button {
   font-size: 16px;
@@ -81,7 +81,7 @@ margin-bottom: 16px;
   border-radius: 50%;
 }
 .form-button:hover {
-  background: #E0373F;
+  background: #e0373f;
 }
 .contacts-footer {
   margin-top: 80px;
@@ -99,7 +99,7 @@ margin-bottom: 16px;
   border: 1px solid #fafafa33;
 }
 .container-contacts:hover {
-  border-color: #FAFAFA;
+  border-color: #fafafa;
 }
 .contacts-footer-mini {
   font-style: normal;
@@ -197,19 +197,19 @@ margin-bottom: 16px;
 font-size: 64px;
 line-height: 64px;
 margin-top: 80px;
-margin-bottom: 64px;
+margin-bottom: 80px;
 }
 .form {
   flex-direction: row;
   align-items: center;
-  margin-top: 0;
+  margin-top: 40px;
 }
 .container-input {
   display: flex;
   gap: 20px;
 }
 .input-footer {
-  width: 245px;
+  max-width: 245px;
 }
 .form-button {
   width: 150px;
