@@ -1,0 +1,280 @@
+/* ================== STYLES FOR MOBILE ================== */
+.about-me {
+  padding-top: 64px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.about-conteiner {
+  position: relative;
+}
+
+.title-with-photo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+}
+
+.title {
+  padding: 32px;
+  height: 500px;
+  max-width: 343px;
+  background-color: #242527;
+  border-radius: 24px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.title-text {
+  width: 279px;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-align: left;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.title-func {
+  color: #ed3b44;
+}
+
+.title-web {
+  color: #fafafa66;
+}
+
+.accordion-info-about-me {
+  margin-left: auto;
+  margin-right: auto;
+  width: 343px;
+}
+
+div.about-me .accordion-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+ul.accordion-info-list .info-item.ac {
+  border: none;
+  border-bottom: 1px solid #fafafa33;
+  padding-bottom: 20px;
+  position: relative;
+  background-color: transparent;
+  margin-top: 32px;
+}
+
+.ac .ac-trigger::after {
+  display: none;
+}
+
+li.info-item.ac .info-item-titel {
+  color: #fafafa66;
+  font-weight: 600;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+li.info-item.ac .info-item-descr {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-item:first-child div.info-item-descr.ac-panel {
+  gap: 32px;
+}
+
+div.info-item-descr.ac-panel .info-item-text {
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  color: #fafafa;
+  padding: 0;
+}
+
+li.info-item.ac .accordion-button-up-down {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform 250ms linear;
+}
+
+.button-roll {
+  transform: rotateZ(180deg);
+}
+
+.accordion-button-up-down svg {
+  height: 20px;
+  width: 20px;
+  stroke: #fafafa;
+}
+
+/* ================== /  SKILLS STYLES FOR MOBILE ================== */
+.skills-container {
+  width: 260px;
+  overflow: hidden;
+  margin-top: 32px;
+}
+
+.skills-slide {
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fafafa;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  /* background-color: #242527; */
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-slide.swiper-slide-active {
+  background-color: #ed3b44;
+}
+
+div.swiper-button-next.skills-button-next {
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  bottom: 2%;
+  right: 16px;
+  z-index: 100;
+  overflow: hidden;
+  display: block;
+  top: auto;
+  pointer-events: all;
+  opacity: inherit;
+  margin: 0;
+}
+
+.skills-button-next svg {
+  stroke: #3b3b3b;
+  fill: none;
+}
+/* ================== /STYLES FOR MOBILE ================== */
+
+/* ================== STYLES FOR TABLET ================== */
+
+@media screen and (min-width: 768px) {
+  .about-me {
+    padding-bottom: 48px;
+  }
+
+  .title-with-photo {
+    margin-bottom: 64px;
+  }
+
+  .title {
+    padding: 64px;
+    height: 700px;
+    max-width: 704px;
+  }
+
+  .title-text {
+    width: 576px;
+    font-size: 38px;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+  }
+
+  .accordion-info-about-me {
+    width: 704px;
+  }
+
+  .info-item:first-child div.info-item-descr.ac-panel {
+    gap: 16px;
+  }
+
+  .skills-container {
+    width: 600px;
+    overflow: hidden;
+    margin-top: 64px;
+  }
+
+  .skills-slide {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    width: 200px;
+    height: 200px;
+  }
+
+  div.swiper-button-next.skills-button-next {
+    bottom: 3.5%;
+    right: 32px;
+  }
+}
+
+/* ================== STYLES FOR DESCTOP ================== */
+
+@media screen and (min-width: 1440px) {
+  .about-me {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .title-with-photo {
+    display: flex;
+    margin-bottom: 96px;
+  }
+
+  .title {
+    max-width: 680px;
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+
+  .title-text {
+    width: 576px;
+    font-size: 38px;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+  }
+
+  .accordion-info-about-me {
+    width: 1376px;
+  }
+
+  .info-item:first-child div.info-item-descr.ac-panel {
+    gap: 32px;
+  }
+
+  li.info-item.ac .info-item-descr {
+    align-items: end;
+    padding-right: 68px;
+  }
+
+  div.info-item-descr.ac-panel .info-item-text {
+    width: 612px;
+  }
+
+  .skills-container {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 96px;
+    margin-left: 32px;
+  }
+  div.swiper-button-next.skills-button-next {
+    display: none;
+  }
+}
+
+/* ================== /STYLES FOR DESCTOP ================== */
