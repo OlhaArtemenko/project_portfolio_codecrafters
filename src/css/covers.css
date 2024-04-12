@@ -1,0 +1,50 @@
+.covers-container {
+  position: relative;
+  height: 480px;
+}
+.covers-list {
+  background-image: url(../img/mobile/covers/mobile-bg-covers.png);
+  background-size: cover;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .cover-list {
+    background-image: url(../img/mobile/covers/mobile-bg-covers@2x.png);
+  }
+}
+
+.marquee-inner {
+  display: flex;
+  transform: rotate(16deg);
+  gap: 20px;
+}
+
+.marquee-line {
+  /* height: 160px; */
+  background-color: transparent;
+  flex-shrink: 0;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(-160%);
+  }
+}
