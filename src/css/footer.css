@@ -1,7 +1,7 @@
 /* Mobile version */
 
 .footer {
-  background-image: url(./src/img/mobile/footer/elements.png);
+  background-image: url(./src/img/mobile/footer/mob-footer-background2x.webp);
   background-repeat: no-repeat;
   background-position-x: 290px;
   background-size: cover;
@@ -42,7 +42,6 @@
   border: transparent;
   border-bottom: 1px solid #fafafa99;
   padding: 0 0 20px 0;
-  resize: none;
 }
 .input {
 margin-bottom: 16px;
@@ -176,7 +175,7 @@ margin-bottom: 16px;
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
 .footer {
-  background-image: url(./src/img/mobile/footer/elements.png);
+  background-image: url(./src/img/mobile/footer/mob-footer-background@2x.webp);
 }
 }
 
@@ -189,6 +188,7 @@ margin-bottom: 16px;
   background-image: url(./src/img/tablet/footer/tab_footer_background@2x.webp);
 }
 }
+
   .footer {
     background-image: url(./src/img/tablet/footer/tab_footer_background.webp);
     background-position-x: 570px;
