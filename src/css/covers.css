@@ -53,6 +53,7 @@
   white-space: nowrap;
   animation-name: marqueeLine;
   animation-duration: 15s;
+  animation-play-state: running;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
@@ -64,7 +65,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .marquee {
+    .cover-list {
       background-image: url('../img/tablet/covers/elements@2x.png');
     }
   }
@@ -82,7 +83,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .marquee {
+    .cover-list {
       background-image: url('../img/desktop/covers/desk-bg-covers@2x.png');
     }
   }
