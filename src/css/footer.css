@@ -45,13 +45,13 @@
   resize: none;
 }
 .input-footer:hover {
-  border-color: #FAFAFA;
+  border-color: #fafafa;
 }
 .input-footer:user-valid {
-  border-color: #3CBC81;
+  border-color: #3cbc81;
 }
 .input-footer:user-invalid {
-  border-color: #E74A3B;
+  border-color: #e74a3b;
 }
 .input-footer::placeholder {
   font-size: 16px;
@@ -62,7 +62,7 @@
   color: #fafafa99;
 }
 .input-footer:hover::placeholder {
-  color: #FAFAFA;
+  color: #fafafa;
 }
 .form-button {
   font-size: 16px;
@@ -78,7 +78,7 @@
   border-radius: 50%;
 }
 .form-button:hover {
-  background: #E0373F;
+  background: #e0373f;
 }
 .contacts-footer {
   margin-top: 80px;
@@ -96,7 +96,7 @@
   border: 1px solid #fafafa33;
 }
 .container-contacts:hover {
-  border-color: #FAFAFA;
+  border-color: #fafafa;
 }
 .contacts-footer-mini {
   font-size: 14px;
@@ -173,51 +173,54 @@
   .footer {
     background-position-x: 570px;
   }
-.title-footer {
-font-size: 64px;
-line-height: 64px;
-margin-top: 80px;
-margin-bottom: 80px;
-}
-.form {
-  flex-direction: row;
-  align-items: center;
-  margin-top: 40px;
-}
-.container-input {
-  display: flex;
-  gap: 20px;
-}
-.input-footer {
-  max-width: 245px;
-}
-.form-button {
-  width: 150px;
-  height: 150px;
-}
-.contacts-footer {
-  margin-top: 40px;
-}
-.container-address {
-  gap: 8px;
-}
-.container-contacts {
-  padding: 18px 32px 18px 32px;
-}
-.contacts-footer-mini {
-  font-size: 16px;
-  line-height: 19.36px;
-}
-.modal-window {
-  width: 492px;
-  min-height: 246px;
-  padding: 64px;
-}
-.modal-button {
-  width: 24px;
-  height: 24px;
-}
-
+  .title-footer {
+    font-size: 64px;
+    line-height: 64px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .form {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .container-input {
+    display: flex;
+    gap: 20px;
+  }
+  .input-footer {
+    max-width: 245px;
+  }
+  .form-button {
+    width: 150px;
+    height: 150px;
+  }
+  .contacts-footer {
+    margin-top: 40px;
+  }
+  .container-address {
+    gap: 8px;
+  }
+  .container-contacts {
+    padding: 18px 32px 18px 32px;
+  }
+  .contacts-footer-mini {
+    font-size: 16px;
+    line-height: 19.36px;
+  }
+  .modal-window {
+    width: 492px;
+    min-height: 246px;
+    padding: 64px;
+  }
+  .modal-button {
+    width: 24px;
+    height: 24px;
+  }
+  .img-footer {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 /* Desktop version */
