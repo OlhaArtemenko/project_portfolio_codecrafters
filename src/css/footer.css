@@ -3,7 +3,7 @@
   padding-bottom: 32px;
 }
 .footer {
-  background-image: url(../img/mobile/footer/mob-footer-background.webp);
+  background-image: url(../img/mobile/footer/elements.png);
   background-repeat: no-repeat;
   background-position: right top;
 }
@@ -56,7 +56,6 @@
   border-bottom: 1px solid #fafafa99;
   padding: 0 0 20px 0;
   resize: none;
-  color: #fafafa;
 }
 .input-footer:hover {
   border-color: #fafafa;
@@ -114,6 +113,7 @@
   border-color: #fafafa;
 }
 .contacts-footer-mini {
+  font-style: normal;
   font-size: 14px;
   font-weight: 500;
   line-height: 16.94px;
@@ -184,46 +184,51 @@
   color: #fafafa99;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .footer {
+    background-image: url(./src/img/mobile/footer/mob-footer-background@2x.webp);
+  }
+}
+
 /* Tablet version */
 @media screen and (min-width: 768px) {
-  .footer {
-    background-image: url(../img/tablet/footer/tab_footer_background.webp);
-  }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .footer {
-      background-image: url('../img/tablet/footer/tab_footer_background@2x.webp');
+      background-image: url(./src/img/tablet/footer/tab_footer_background@2x.webp);
     }
+  }
+
+  .footer {
+    background-position-x: 570px;
   }
   .title-footer {
     font-size: 64px;
-    line-height: 1;
-    letter-spacing: -0.03em;
-    padding-top: 80px;
+    line-height: 64px;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
-
   .form {
     flex-direction: row;
     align-items: center;
     margin-top: 40px;
   }
-  .container-input input {
-    margin-bottom: 0;
-  }
   .container-input {
     display: flex;
-    gap: 32px;
+    gap: 20px;
   }
   .input-footer {
-    width: 245px;
+    max-width: 245px;
   }
   .form-button {
     width: 150px;
     height: 150px;
   }
   .contacts-footer {
-    margin-top: 18px;
+    margin-top: 40px;
   }
   .container-address {
     gap: 8px;
@@ -252,21 +257,15 @@
 
 /* Desktop version */
 @media screen and (min-width: 1440px) {
-  #footer .container {
-    width: 1048px;
-  }
   .footer {
-    background-image: url(../img/desktop/footer/desk_footer-backgraund.webp);
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .footer {
-      background-image: url('../img/desktop/footer/desk_footer-backgraund@2x.webp');
-    }
+    background-position-x: 1040px;
+    margin-right: auto;
+    margin-left: auto;
+    gap: unset;
+    display: flex;
   }
   .form {
-    gap: 60px;
+    gap: 86px;
   }
   .input-footer {
     width: 390px;

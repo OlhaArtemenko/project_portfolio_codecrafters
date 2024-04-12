@@ -2,7 +2,25 @@
   <div class="container container-footer">
     <div class="container-title">
       <h2 class="title-footer">
-        <img
+        <picture>
+          <source
+            srcset="
+              ../img/tablet/footer/tab_footer_photo_logo.png,
+              ../img/tablet/footer/tab_footer_photo_logo@2x.png 2x
+            "
+            media="(min-width: 768px)"
+            width="70"
+            height="70"
+          />
+          <source
+            srcset="
+              ../img/mobile/footer/mob-footer_photo_logo.png,
+              ../img/mobile/footer/mob-footer_photo_logo@2x.png 2x
+            "
+            width="44"
+            height="44"
+          />
+          <img
           class="img-footer"
           srcset="
             ../img/mobile/footer/mob-footer_photo_logo.png    1x,
@@ -14,25 +32,24 @@
         LET'S <span class="title-span">WORK<br /></span>TOGETHER
       </h2>
     </div>
-    <form class="form">
+    <form class="form" id="form">
       <div class="container-input">
         <input
-          class="input-footer"
+          class="input-footer input"
           type="email"
           name="email"
-          aria-label="type your email"
           required
           pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
           placeholder="clients@gmail.com"
         />
-        <textarea
+        <input
           class="input-footer"
+          id="message"
+          type="text"
           aria-label="type your comment"
           required
-          cols="30"
-          rows="10"
           placeholder="comments"
-        ></textarea>
+        ></input>
       </div>
       <button class="form-button" type="submit">Send</button>
     </form>
@@ -51,7 +68,7 @@
       </ul>
     </address>
     <!-- ========Modal window ============= -->
-    <div class="backdrop visually-hidden">
+    <div id="modalW" class="backdrop visually-hidden">
       <div class="modal-window">
         <button class="modal-button" type="button">
           <svg class="modal-btn-icon" width="22" height="22">
