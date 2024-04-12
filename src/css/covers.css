@@ -1,27 +1,45 @@
+#covers .covers-container {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 100%;
+}
 .covers-container {
   position: relative;
-  height: 480px;
+  height: 508px;
 }
-.covers-list {
+.marquee {
+  width: 100%;
+  height: 508px;
   background-image: url(../img/mobile/covers/mobile-bg-covers.png);
   background-size: cover;
-  position: absolute;
-  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
   flex-direction: column;
-  gap: 40px;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-@media screen and (min-width: 768px) {
-  .cover-list {
-    background-image: url(../img/mobile/covers/mobile-bg-covers@2x.png);
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .marquee {
+    background-image: url('../img/mobile/covers/mobile-bg-covers@2x.png');
   }
 }
-
+.covers-list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  top: -122px;
+  transform: rotate(16deg);
+}
 .marquee-inner {
   display: flex;
-  transform: rotate(16deg);
+  margin-bottom: 16px;
   gap: 20px;
+  transform: rotate(16deg);
 }
 
 .marquee-line {
@@ -39,6 +57,36 @@
   animation-iteration-count: infinite;
 }
 
+@media screen and (min-width: 768px) {
+  .cover-list {
+    background-image: url(../img/tablet/covers/elements.png);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .marquee {
+      background-image: url('../img/tablet/covers/elements@2x.png');
+    }
+  }
+  .covers-container {
+    height: 960px;
+  }
+  .marquee {
+    height: 960px;
+  }
+}
+@media screen and (min-width: 1440) {
+  .cover-list {
+    background-image: url(../img/desktop/covers/desk-bg-covers.png);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .marquee {
+      background-image: url('../img/desktop/covers/desk-bg-covers@2x.png');
+    }
+  }
+}
 @keyframes marqueeLine {
   from {
     transform: translateX(-20%);
