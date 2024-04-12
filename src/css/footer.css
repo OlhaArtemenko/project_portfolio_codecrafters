@@ -1,7 +1,7 @@
 /* Mobile version */
 
 .footer {
-  background-image: url(../img/mobile/footer/elements.png);
+  background-image: url(./src/img/mobile/footer/elements.png);
   background-repeat: no-repeat;
   background-position-x: 290px;
   background-size: cover;
@@ -43,6 +43,9 @@
   border-bottom: 1px solid #fafafa99;
   padding: 0 0 20px 0;
   resize: none;
+}
+.input {
+margin-bottom: 16px;
 }
 .input-footer:hover {
   border-color: #FAFAFA;
@@ -99,6 +102,7 @@
   border-color: #FAFAFA;
 }
 .contacts-footer-mini {
+  font-style: normal;
   font-size: 14px;
   font-weight: 500;
   line-height: 16.94px;
@@ -168,28 +172,44 @@
   color: #fafafa99;
 }
 
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.footer {
+  background-image: url(./src/img/mobile/footer/elements.png);
+}
+}
+
 /* Tablet version */
 @media screen and (min-width: 768px) {
+  @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.footer {
+  background-image: url(./src/img/tablet/footer/tab_footer_background@2x.webp);
+}
+}
   .footer {
+    background-image: url(./src/img/tablet/footer/tab_footer_background.webp);
     background-position-x: 570px;
   }
 .title-footer {
 font-size: 64px;
 line-height: 64px;
 margin-top: 80px;
-margin-bottom: 80px;
+margin-bottom: 64px;
 }
 .form {
   flex-direction: row;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 0;
 }
 .container-input {
   display: flex;
   gap: 20px;
 }
 .input-footer {
-  max-width: 245px;
+  width: 245px;
 }
 .form-button {
   width: 150px;
@@ -222,7 +242,15 @@ margin-bottom: 80px;
 
 /* Desktop version */
 @media screen and (min-width: 1440px) {
+  @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.footer {
+  background-image: url(./src/img/desktop/footer/desk_footer-backgraund@2x.webp);
+}
+}
   .footer {
+    background-image: url(./src/img/desktop/footer/desk_footer-backgraund.webp);
     background-position-x: 1040px;
     margin-right: auto;
     margin-left: auto;
@@ -230,10 +258,10 @@ margin-bottom: 80px;
     display: flex;
   }
   .form {
-    gap: 60px;
+    gap: 86px;
   }
   .input-footer {
-    max-width: 290px;
+    width: 390px;
   }
   .img-footer {
     flex-wrap: nowrap;

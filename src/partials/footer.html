@@ -5,8 +5,8 @@
         <img
           class="img-footer"
           srcsett="
-            ../img/mobile/footer/mini.png 1x,
-            ../img/tablet/footer-tablet/image-footer.png 2x
+            ./src/img/mobile/footer/mini.png 1x,
+            ./src/img/tablet/footer/tab_footer_photo_logo.png 2x
           "
           src="../img/mobile/footer/mini.png"
           alt="young-man-team-leader-confident-young-man-working-his-desktop-with-laptop-looking-with-smile-his-light-office.png"
@@ -14,10 +14,10 @@
         LET'S <span class="title-span">WORK</span> TOGETHER
       </h2>
     </div>
-    <form class="form">
+    <form class="form" id="form">
       <div class="container-input">
         <input
-        class="input-footer"
+        class="input-footer input"
         type="email"
         name="email"
         aria-label="type your email"
@@ -27,6 +27,7 @@
       />
       <textarea
         class="input-footer"
+        name="message"
         aria-label="type your comment"
         required
         cols="30"
@@ -51,7 +52,7 @@
       </ul>
     </address>
     <!-- ========Modal window ============= -->
-    <div class="backdrop visually-hidden">
+    <div id="modalW" class="backdrop visually-hidden">
       <div class="modal-window">
         <button class="modal-button" type="button">
           <svg class="modal-btn-icon" width="22" height="22">
