@@ -11,8 +11,8 @@
 }
 
 .benefits-section {
-  padding-left: 32px;
-  padding-right: 32px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .benefits-container {
 }
@@ -95,8 +95,8 @@
   .benefits-section {
     width: 704px;
     max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .benefits-container {
   }
