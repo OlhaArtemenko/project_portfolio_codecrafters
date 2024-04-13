@@ -24,7 +24,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .marquee {
-    background-image: url('../img/mobile/covers/mobile-bg-covers@2x.png');
+    background-image: url(../img/mobile/covers/mobile-bg-covers@2x.png);
   }
 }
 .covers-list {
@@ -66,7 +66,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .cover-list {
-      background-image: url('../img/tablet/covers/elements@2x.png');
+      background-image: url(../img/tablet/covers/elements@2x.png);
     }
   }
   .covers-container {
@@ -84,7 +84,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .cover-list {
-      background-image: url('../img/desktop/covers/desk-bg-covers@2x.png');
+      background-image: url(../img/desktop/covers/desk-bg-covers@2x.png);
     }
   }
 }
