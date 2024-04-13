@@ -1,7 +1,5 @@
 /* Mobile version */
-#footer {
-  padding-bottom: 32px;
-}
+
 .footer {
   background-image: url(../img/mobile/footer/elements.png);
   background-repeat: no-repeat;
@@ -191,9 +189,8 @@
     background-image: url(./src/img/mobile/footer/mob-footer-background@2x.webp);
   }
 }
-
 /* Tablet version */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -201,10 +198,14 @@
       background-image: url(./src/img/tablet/footer/tab_footer_background@2x.webp);
     }
   }
-
   .footer {
     background-position-x: 570px;
   }
+  .input-footer {
+    max-width: 245px;
+  }
+}
+@media screen and (min-width: 768px) {
   .title-footer {
     font-size: 64px;
     line-height: 64px;
@@ -220,9 +221,7 @@
     display: flex;
     gap: 20px;
   }
-  .input-footer {
-    max-width: 245px;
-  }
+
   .form-button {
     width: 150px;
     height: 150px;
@@ -254,7 +253,6 @@
     height: 70px;
   }
 }
-
 /* Desktop version */
 @media screen and (min-width: 1440px) {
   .footer {
