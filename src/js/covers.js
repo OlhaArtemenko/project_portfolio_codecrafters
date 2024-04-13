@@ -1,30 +1,30 @@
-// Функція, яка перевіряє, чи секція "Covers" відображається в області видимості користувача
-function isInViewport(element) {
+function isPartiallyInViewport(element) {
   const rect = element.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <=
-      (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
+  const windowHeight =
+    window.innerHeight || document.documentElement.clientHeight;
+  const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+
+  const vertInView = rect.top <= windowHeight && rect.top + rect.height >= 0;
+  const horInView = rect.left <= windowWidth && rect.left + rect.width >= 0;
+
+  return vertInView && horInView;
 }
 
-// Функція для виконання анімації
 function animateElementOnScroll() {
   const covers = document.querySelector('#covers');
   const animateElements = document.querySelectorAll('.marquee-line');
 
   window.addEventListener('scroll', function () {
-    animateElements.forEach(function (animateElement) {
-      if (isInViewport(covers)) {
+    if (isPartiallyInViewport(covers)) {
+      animateElements.forEach(function (animateElement) {
         animateElement.classList.add('animate');
-      } else {
+      });
+    } else {
+      animateElements.forEach(function (animateElement) {
         animateElement.classList.remove('animate');
-      }
-    });
+      });
+    }
   });
 }
 
-// Виклик функції після завантаження сторінки
 document.addEventListener('DOMContentLoaded', animateElementOnScroll);
