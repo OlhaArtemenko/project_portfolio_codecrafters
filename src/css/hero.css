@@ -137,10 +137,7 @@
       background-image: url('../img/desktop/hero/desk_hero@2x.webp');
     }
   }
-  /* #hero .hero-title {
-    max-width: 1084px;
-    height: 270px;
-  } */
+
   #hero .hero-container {
     height: 568px;
     width: 1230px;
