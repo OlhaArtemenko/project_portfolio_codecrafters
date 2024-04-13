@@ -156,6 +156,7 @@ li.info-item.ac .accordion-button-up-down {
 .skills-button-next svg {
   stroke: #3b3b3b;
   fill: none;
+  width: 40px;
 }
 
 div.swiper-button-next.skills-button-next {
