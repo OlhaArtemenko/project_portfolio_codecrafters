@@ -51,6 +51,8 @@
   align-items: center;
   justify-content: center;
   white-space: nowrap;
+}
+.animate {
   animation-name: marqueeLine;
   animation-duration: 15s;
   animation-play-state: running;
