@@ -54,7 +54,7 @@
 }
 .animate {
   animation-name: marqueeLine;
-  animation-duration: 15s;
+  animation-duration: 5s;
   animation-play-state: running;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
@@ -81,6 +81,7 @@
 @media screen and (min-width: 1440) {
   .cover-list {
     background-image: url(../img/desktop/covers/desk-bg-covers.png);
+    border-radius: 20%;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -92,14 +93,14 @@
 }
 @keyframes marqueeLine {
   0% {
-    transform: translateX(0%);
-  }
-
-  50% {
     transform: translateX(-20%);
   }
 
+  50% {
+    transform: translateX(-160%);
+  }
+
   100% {
-    transform: translateX(0%);
+    transform: translateX(-20%);
   }
 }
