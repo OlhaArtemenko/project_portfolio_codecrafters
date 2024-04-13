@@ -31,6 +31,7 @@
   text-underline-offset: 4px;
   text-decoration-skip-ink: none;
   margin-bottom: 18px;
+  transition: color 0.3s ease;
 }
 
 .header-text-logo {
@@ -61,6 +62,11 @@
   flex-grow: 0;
 }
 
+.header-burger-btn:active {
+  transform: scale(1.07);
+}
+
+
 /* ======================== MOBILE MENU STYLES ========================= */
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -81,6 +87,10 @@
     right: 18px;
   }
   
+  .menu-btn-close:active {
+    transform: scale(1.07);
+  }
+
   .header-menu-item-link:hover,
   .header-menu-item-link:focus {
     color: #ED3B44;
@@ -101,6 +111,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
   }
 
   .header-menu-item-link {
@@ -110,6 +121,8 @@
     color: #fafafa;
     text-decoration: underline;
     text-underline-offset: 4px;
+    transition: color 0.3s ease;
+    transition: transform 0.3s ease;
   }
 
   .header-button-link {
@@ -134,6 +147,7 @@
     margin-bottom: 64px;
     margin-right: 109px;
     margin-left: 102px;
+    transition: color 0.3s ease;
   }
 
   .btn-link-none{
@@ -229,6 +243,7 @@
     text-align: left;
     background: rgb(237, 59, 68);
     letter-spacing: -0.02em;
+    transition: color 0.3s ease;
   }
 
   .header-button-link:hover {
@@ -279,6 +294,8 @@
     text-align: left;
     background: rgb(237, 59, 68);
     letter-spacing: -0.02em;
+    transition: color 0.3s ease;
+    transition: transform 0.3s ease;
   }
 
   .header-button-link:hover {
@@ -297,6 +314,8 @@
     margin-right: 487px;
     text-decoration: underline;
     margin-bottom: 18px;
+    transition: color 0.3s ease;
+    transition: transform 0.3s ease;
   }
 }
 
@@ -317,6 +336,7 @@
     transform: scaleY(0) translateY(20%);
     transform-origin: top center;
     opacity: 0;
+  
 }
 
   .header-menu-list_active {
@@ -329,6 +349,8 @@
     font-size: 16px;
     letter-spacing: -0.02em;
     color: #fafafa;
+    transition: color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
   .menu-btn-desctab:hover {
