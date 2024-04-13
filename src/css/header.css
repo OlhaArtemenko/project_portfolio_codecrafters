@@ -130,10 +130,10 @@
     text-align: left;
     background: rgb(237, 59, 68);
     letter-spacing: -0.02em;
-    margin-top: 289px;
+    /* margin-top: 289px; */
     margin-bottom: 64px;
-    margin-right: 109px;
-    margin-left: 102px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .btn-link-none {
@@ -149,8 +149,11 @@
     top: 0;
     left: 0;
     z-index: 999999999;
-    width: 375px;
-    height: 812px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     background-color: #1c1d20;
     background-size: cover;
     background-image: url(../img/mobile/hero/modal-back.webp);

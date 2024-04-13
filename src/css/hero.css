@@ -1,3 +1,6 @@
+#hero {
+  padding-bottom: 0;
+}
 .hero-section {
   text-align: center;
   background-image: url(../img/mobile/hero/hero.webp);
@@ -23,8 +26,6 @@
   display: flex;
   flex-direction: column;
   gap: 212px;
-  /* height: 499px;
-  width: 343px; */
 }
 .hero-title {
   font-weight: 500;
@@ -90,7 +91,6 @@
   #hero .hero-container {
     gap: 187px;
     width: 704px;
-    height: 692px;
   }
   .hero-title {
     width: 632px;
@@ -139,7 +139,6 @@
   }
 
   #hero .hero-container {
-    /* height: 568px; */
     width: 1230px;
   }
 }
