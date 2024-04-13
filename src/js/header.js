@@ -24,13 +24,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     closeBtn.addEventListener('click', function() {
-        menuContainer.classList.remove('is-open');
-        burgerBtn.classList.remove('visually-hidden');
-        closeBtn.classList.add('visually-hidden');
-        closeBtn.classList.add('header-button-link-none');
-        buttonLink.classList.add('btn-link-none');
-        menuList.classList.remove('header-menu-list-mobile');
-        menuList.classList.add('header-menu-list');
+        menuContainer.classList.add('menu-close-animate'); 
+        setTimeout(function() {
+            menuContainer.classList.remove('menu-close-animate'); 
+            menuContainer.classList.remove('is-open');
+            burgerBtn.classList.remove('visually-hidden');
+            closeBtn.classList.add('visually-hidden');
+            closeBtn.classList.add('header-button-link-none');
+            buttonLink.classList.add('btn-link-none');
+            menuList.classList.remove('header-menu-list-mobile');
+            menuList.classList.add('header-menu-list');
+        }, 300); 
     });
 
     const menuItemLinks = document.querySelectorAll('.header-menu-item-link');
@@ -39,4 +43,9 @@ document.addEventListener('DOMContentLoaded', function() {
             closeBtn.click();
         });
     });
+
+    buttonLink.addEventListener('click', function() {
+        closeBtn.click();
+    });
+    
 });
