@@ -74,7 +74,7 @@
   letter-spacing: -0.02em;
 }
 
-//////////////////////////////////* TABLET *//////////////////////////////////
+/*================== TABLET ================*/
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .hero-section {
     background-image: url('../img/tablet/hero/tab_hero.webp');
@@ -124,7 +124,7 @@
   }
 }
 
-////////////////////////////* DESKTOP */////////////////////////////////////
+/*================= DESKTOP =================*/
 
 @media screen and (min-width: 1440px) {
   .hero-section {
