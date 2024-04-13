@@ -89,11 +89,15 @@
   }
 }
 @keyframes marqueeLine {
-  from {
+  0% {
+    transform: translateX(0%);
+  }
+
+  50% {
     transform: translateX(-20%);
   }
 
-  to {
-    transform: translateX(-160%);
+  100% {
+    transform: translateX(0%);
   }
 }
