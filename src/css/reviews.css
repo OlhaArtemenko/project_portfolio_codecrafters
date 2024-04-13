@@ -1,0 +1,159 @@
+.reviews-section {
+    min-width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    min-width: 0;
+    padding: 32px 0;
+  }
+  .reviews-title {
+    color: rgba(250, 250, 250, 0.4);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.32px;
+    text-align: left;
+  }
+  .container {
+    padding: 0 16px;
+    min-width: 0;
+    width: 100%;
+  }
+  .container-title {
+    display: flex;
+    align-items: flex-start;
+  }
+  .reviews-list {
+    margin: 0 auto;
+    margin-top: 32px;
+  }
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+}
+.swiper-horizontal {
+  touch-action: pan-y;
+}
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+  box-sizing: content-box;
+}
+  .reviews-list-items.swiper-slide {
+    box-sizing: border-box;
+    padding: 32px 24px;
+    width: 342px;
+    height: 302px;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 20px;
+    text-overflow: ellipsis;
+  }
+  .reviews-person-img {
+    border-radius: 10px;
+    height: 48px;
+    width: 48px;
+  }
+  .reviews-text-content {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 158px;
+  }
+  .reviews-person-name {
+    color: rgb(250, 250, 250);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.32px;
+    text-align: left;
+  }
+  .reviews-text-p {
+    color: rgba(250, 250, 250, 0.6);
+    font-family: Inter Tight;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.32px;
+    text-align: left;
+    overflow: scroll;
+  }
+  .review-icon-btn {
+    stroke: rgb(250, 250, 250, 100%);
+    fill: transparent;
+  }
+  .reviews-swipe-btns-wrapper {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .prev-review-btn,
+  .next-review-btn {
+    background-color: transparent;
+    border: none;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    border: 1px solid rgb(250, 250, 250, 50%);
+    width: 52px;
+    height: 52px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .last-button {
+    border: 1px solid rgba(250, 250, 250, 0.2);
+  }
+  @media screen and (width: 320px) {
+    .reviews-list-items.swiper-slide {
+      padding: 22px 12px;
+      width: 300px;
+    }
+    .container {
+      padding: 0 8px;
+    }
+  }
+  /** TABLET **/
+    
+  @media screen and (min-width: 767px) {
+    .reviews-section {
+      min-width: 704px;
+      padding: 48px 0;
+    }
+    .container {
+      padding: 0 32px;
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .reviews-section {
+      min-width: 1180px;
+      padding: 82px 0;
+    }
+    .container {
+      padding: 0 32px;
+    }
+  }
+  
+  @media screen and (width: 1440px) {
+    .reviews-section {
+      min-width: 1376px;
+      padding: 82px 0;
+    }
+  }
+  
