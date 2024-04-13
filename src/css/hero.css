@@ -139,7 +139,7 @@
   }
 
   #hero .hero-container {
-    height: 568px;
+    /* height: 568px; */
     width: 1230px;
   }
 }
