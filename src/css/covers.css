@@ -1,0 +1,103 @@
+#covers .covers-container {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 100%;
+}
+.covers-container {
+  position: relative;
+  height: 508px;
+}
+.marquee {
+  width: 100%;
+  height: 508px;
+  background-image: url(../img/mobile/covers/mobile-bg-covers.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .marquee {
+    background-image: url('../img/mobile/covers/mobile-bg-covers@2x.png');
+  }
+}
+.covers-list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  top: -122px;
+  transform: rotate(16deg);
+}
+.marquee-inner {
+  display: flex;
+  margin-bottom: 16px;
+  gap: 20px;
+  transform: rotate(16deg);
+}
+
+.marquee-line {
+  /* height: 160px; */
+  background-color: transparent;
+  flex-shrink: 0;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 15s;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@media screen and (min-width: 768px) {
+  .cover-list {
+    background-image: url(../img/tablet/covers/elements.png);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .cover-list {
+      background-image: url('../img/tablet/covers/elements@2x.png');
+    }
+  }
+  .covers-container {
+    height: 960px;
+  }
+  .marquee {
+    height: 960px;
+  }
+}
+@media screen and (min-width: 1440) {
+  .cover-list {
+    background-image: url(../img/desktop/covers/desk-bg-covers.png);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .cover-list {
+      background-image: url('../img/desktop/covers/desk-bg-covers@2x.png');
+    }
+  }
+}
+@keyframes marqueeLine {
+  0% {
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: translateX(-20%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}

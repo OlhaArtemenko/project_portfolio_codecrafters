@@ -1,3 +1,16 @@
-import Swiper from 'swiper';
-import 'swiper/css';
-// import { support } from '../js/..?';
+import Swiper from "swiper";
+import { Navigation, Pagination } from "swiper/modules";
+
+import 'swiper/css'
+
+document.addEventListener("DOMContentLoaded", function () {
+    const WorkSwiper = new Swiper(".projects .swiper", {
+        loop: false,
+        navigation: {
+            nextEl: ".swiper-btn-next",
+            prevEl: ".swiper-button-prev",
+            disabledClass: "disabled",
+        },
+        modules: [Navigation, Pagination],
+    });
+});
