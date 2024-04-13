@@ -125,22 +125,26 @@ li.info-item.ac .accordion-button-up-down {
 }
 
 /* ================== /  SKILLS STYLES FOR MOBILE ================== */
-.skills-container {
-  width: 260px;
-  overflow: hidden;
+.about-me-skills-wrapper {
+  position: relative;
+  display: flex;
   margin-top: 32px;
 }
 
+.skills-container {
+  width: 260px;
+  overflow: hidden;
+}
+
 .skills-slide {
-  display: flex;
+  display: flex !important;
   font-weight: 500;
   font-size: 16px;
   color: #fafafa;
-  width: 130px;
-  height: 130px;
+  width: 130px !important;
+  height: 130px !important;
   border-radius: 50%;
   border: 1px solid rgba(250, 250, 250, 0.2);
-  /* background-color: #242527; */
   justify-content: center;
   align-items: center;
 }
@@ -149,26 +153,26 @@ li.info-item.ac .accordion-button-up-down {
   background-color: #ed3b44;
 }
 
-div.swiper-button-next.skills-button-next {
-  position: absolute;
-  right: 0;
-  width: 40px;
-  height: 40px;
-  bottom: 2%;
-  right: 16px;
-  z-index: 100;
-  overflow: hidden;
-  display: block;
-  top: auto;
-  pointer-events: all;
-  opacity: inherit;
-  margin: 0;
-}
-
 .skills-button-next svg {
   stroke: #3b3b3b;
   fill: none;
+  width: 40px;
 }
+
+div.swiper-button-next.skills-button-next {
+  position: absolute;
+  top: 50px;
+  right: 16px;
+  width: 28px;
+  height: 28px;
+  z-index: 99999;
+  overflow: hidden;
+  display: flex;
+  border-radius: 50%;
+  pointer-events: all;
+  opacity: inherit;
+}
+
 /* ================== /STYLES FOR MOBILE ================== */
 
 /* ================== STYLES FOR TABLET ================== */
@@ -208,18 +212,18 @@ div.swiper-button-next.skills-button-next {
     overflow: hidden;
     margin-top: 64px;
   }
-
   .skills-slide {
     font-weight: 500;
     font-size: 20px;
     letter-spacing: -0.02em;
-    width: 200px;
-    height: 200px;
+    width: 200px !important;
+    height: 200px !important;
   }
-
   div.swiper-button-next.skills-button-next {
     bottom: 3.5%;
-    right: 32px;
+    top: 140px;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -272,8 +276,11 @@ div.swiper-button-next.skills-button-next {
     margin-top: 96px;
     margin-left: 32px;
   }
+
   div.swiper-button-next.skills-button-next {
-    display: none;
+    bottom: 3.5%;
+    right: 32px;
+    top: 175px;
   }
 }
 
