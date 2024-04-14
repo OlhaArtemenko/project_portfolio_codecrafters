@@ -195,8 +195,7 @@
   }
 
   @media screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx),
-    screen and (min-device-pixel-ration: 2) {
+    screen and (min-resolution: 2dppx) {
     .header-menu-container.is-open {
       background-image: url(../img/mobile/hero/modal-back@2x.webp);
     }

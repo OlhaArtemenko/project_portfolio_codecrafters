@@ -5,9 +5,7 @@
   background-repeat: no-repeat;
   background-position: right top;
 }
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .footer {
     background-image: url(../img/mobile/footer/mob-footer-background@2x.webp);
   }
@@ -188,9 +186,7 @@
   .footer {
     background-image: url(../img/tablet/footer/tab_footer_background.webp);
   }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .footer {
       background-image: url(../img/tablet/footer/tab_footer_background@2x.webp);
     }
@@ -261,9 +257,7 @@
     gap: unset;
     display: flex;
   }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .footer {
       background-image: url(../img/desktop/footer/desk_footer-backgraund@2x.webp);
     }

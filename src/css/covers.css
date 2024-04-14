@@ -20,9 +20,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .marquee {
     background-image: url(../img/mobile/covers/mobile-bg-covers@2x.png);
   }
@@ -64,9 +62,7 @@
   .marquee {
     background-image: url(../img/tablet/covers/elements.png);
   }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .marquee {
       background-image: url(../img/tablet/covers/elements@2x.png);
     }
@@ -87,9 +83,7 @@
     max-width: 1440px;
     overflow: hidden;
   }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .marquee {
       background-image: url(../img/desktop/covers/desk-bg-covers@2x.png);
     }
