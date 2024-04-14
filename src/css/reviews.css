@@ -1,8 +1,8 @@
 @import 'swiper/css';
 
 .reviews {
-  padding-top: 32px;
-  padding-bottom: 64px;
+  /* padding-top: 32px; */
+  /* padding-bottom: 64px; */
 }
 
 .reviews-section-title {
@@ -16,7 +16,9 @@
 .reviews-list {
   margin-bottom: 32px;
 }
-
+.swiper {
+  margin-bottom: 0;
+}
 .reviews-list-item {
   border-radius: 20px;
   padding: 32px 24px;
@@ -110,8 +112,8 @@
 
 @media screen and (min-width: 768px) {
   .reviews {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    /* padding-top: 48px; */
+    /* padding-bottom: 48px; */
   }
 
   .reviews-swipe-btns-wrapper {
@@ -134,8 +136,8 @@
 
 @media screen and (min-width: 1440px) {
   .reviews {
-    padding-top: 82px;
-    padding-bottom: 125px;
+    /* padding-top: 82px; */
+    /* padding-bottom: 125px; */
   }
 }
 
