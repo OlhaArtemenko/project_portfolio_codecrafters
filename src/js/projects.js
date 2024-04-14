@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const WorkSwiper = new Swiper(".projects .swiper", {
         loop: false,
         navigation: {
-            nextEl: ".swiper-btn-next",
+            nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
             disabledClass: "disabled",
         },
