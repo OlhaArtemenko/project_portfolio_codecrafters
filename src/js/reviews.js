@@ -103,3 +103,24 @@ const reviewsSwiper = new Swiper('.reviews-swiper', {
     },
   },
 });
+
+const prevButton = document.querySelector('.prev-review-btn');
+const nextButton = document.querySelector('.next-review-btn');
+
+// Функція для встановлення стилів кнопок перемикання на основі їх доступності
+function setButtonStyles() {
+  const isPrevDisabled = prevButton.disabled;
+  const isNextDisabled = nextButton.disabled;
+
+  prevButton.style.color = isPrevDisabled ? '#fafafa33' : '#fafafa';
+  prevButton.style.borderColor = isPrevDisabled ? '#fafafa33' : '#fafafa';
+
+  nextButton.style.color = isNextDisabled ? '#fafafa33' : '#fafafa';
+  nextButton.style.borderColor = isNextDisabled ? '#fafafa33' : '#fafafa';
+}
+
+setButtonStyles();
+
+// Додаємо обробники подій для встановлення стилів при зміні стану кнопок
+prevButton.addEventListener('click', setButtonStyles);
+nextButton.addEventListener('click', setButtonStyles);

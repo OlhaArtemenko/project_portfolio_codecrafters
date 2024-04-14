@@ -5,16 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const faqItems = document.querySelectorAll('.ac-faq-li');
   faqItems.forEach((faqItem, index) => {
     const panel = faqItem.querySelector('.ac-panel');
-    if (index === 0) {
-      // Перший елемоент за замовчуванням відкритий
-      faqItem.classList.add('active');
-      panel.style.maxHeight = panel.scrollHeight + 'px';
-    } else {
-      panel.style.maxHeight = '0';
-    }
+    panel.style.maxHeight = '0'; // Закрити панель
     panel.style.overflow = 'hidden';
     panel.style.transition = 'max-height 0.7s ease';
   });
+
   const faqButtons = document.querySelectorAll('.fqa-btn-open');
   function toggleAccordion(event) {
     const faqItem = event.currentTarget.closest('.ac-faq-li');
@@ -37,6 +32,26 @@ document.addEventListener('DOMContentLoaded', () => {
   faqButtons.forEach(button => {
     button.addEventListener('click', toggleAccordion);
   });
+
+  // Додаємо обробник події прокрутки
+  window.addEventListener('scroll', () => {
+    // Перевіряємо, чи акордеон повністю видимий на екрані
+    const isVisible = Array.from(faqItems).some(item => {
+      const bounding = item.getBoundingClientRect();
+      return bounding.top >= 0 && bounding.bottom <= window.innerHeight;
+    });
+
+    // Якщо акордеон не видно, закрити всі панелі
+    if (!isVisible) {
+      faqItems.forEach(faqItem => {
+        const panel = faqItem.querySelector('.ac-panel');
+        faqItem.classList.remove('active');
+        panel.style.maxHeight = '0';
+      });
+    }
+  });
+
+  // Ініціалізація бібліотеки accordion-js
   new Accordion('.faq-list', {
     duration: 700,
     showMultiple: false,
