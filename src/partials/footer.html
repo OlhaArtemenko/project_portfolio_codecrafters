@@ -5,8 +5,8 @@
         <picture>
           <source
             srcset="
-              ../img/tablet/footer/tab_footer_photo_logo.png,
-              ../img/tablet/footer/tab_footer_photo_logo@2x.png 2x
+              ./img/tablet/footer/tab_footer_photo_logo.png    1x,
+              ./img/tablet/footer/tab_footer_photo_logo@2x.png 2x
             "
             media="(min-width: 768px)"
             width="70"
@@ -14,21 +14,23 @@
           />
           <source
             srcset="
-              ../img/mobile/footer/mob-footer_photo_logo.png,
-              ../img/mobile/footer/mob-footer_photo_logo@2x.png 2x
+              ./img/mobile/footer/mob-footer_photo_logo.png,
+              ./img/mobile/footer/mob-footer_photo_logo@2x.png 2x
             "
+            media="(min-width: 320px) and (max-width: 767px)"
             width="44"
             height="44"
           />
           <img
-          class="img-footer"
-          srcset="
-            ../img/mobile/footer/mob-footer_photo_logo.png    1x,
-            ../img/mobile/footer/mob-footer_photo_logo@2x.png 2x
-          "
-          src="../img/mobile/footer/mini.png"
-          alt="young-man-team-leader-confident-young-man-working-his-desktop-with-laptop-looking-with-smile-his-light-office.png"
-        />
+            class="img-footer"
+            srcset="
+              ./img/mobile/footer/mob-footer_photo_logo.png    1x,
+              ./img/mobile/footer/mob-footer_photo_logo@2x.png 2x
+            "
+            src="./img/mobile/footer/mini.png"
+            alt="Lloyd Jefferson"
+          />
+        </picture>
         LET'S <span class="title-span">WORK<br /></span>TOGETHER
       </h2>
     </div>
@@ -49,7 +51,7 @@
           aria-label="type your comment"
           required
           placeholder="comments"
-        ></input>
+        />
       </div>
       <button class="form-button" type="submit">Send</button>
     </form>
@@ -72,7 +74,7 @@
       <div class="modal-window">
         <button class="modal-button" type="button">
           <svg class="modal-btn-icon" width="22" height="22">
-            <use href="../img/sprite.svg#icon-x-close"></use>
+            <use href="./img/sprite.svg#icon-x-close"></use>
           </svg>
         </button>
         <h3 class="modal-title">Thank you for your interest in cooperation!</h3>

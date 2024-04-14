@@ -22,7 +22,9 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -39,8 +41,6 @@ body {
   font-family: 'Inter Tight', sans-serif;
   background-color: #1c1d20;
   color: #fafafa;
-
-  scroll-behavior: smooth;
 }
 input,
 textarea,

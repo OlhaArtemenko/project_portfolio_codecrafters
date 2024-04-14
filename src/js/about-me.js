@@ -24,6 +24,7 @@ const swiper = new Swiper('.skills-container', {
   navigation: {
     nextEl: '.skills-button-next',
   },
+
   keyboard: {
     enabled: true,
     onlyInViewport: true,
@@ -31,9 +32,7 @@ const swiper = new Swiper('.skills-container', {
   breakpoints: {
     375: { slidesPerView: 2 },
     768: { slidesPerView: 3 },
-    1440: {
-      slidesPerView: 6,
-    },
+    1440: { slidesPerView: 6 },
   },
   mousewheel: {
     invert: true,
