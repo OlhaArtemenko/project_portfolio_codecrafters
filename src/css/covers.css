@@ -20,9 +20,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .marquee {
     background-image: url(../img/mobile/covers/mobile-bg-covers@2x.png);
   }
@@ -61,13 +59,11 @@
 }
 
 @media screen and (min-width: 768px) and (mam-width: 1439px) {
-  .covers-list {
+  .marquee {
     background-image: url(../img/tablet/covers/elements.png);
   }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .covers-list {
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .marquee {
       background-image: url(../img/tablet/covers/elements@2x.png);
     }
   }
@@ -80,21 +76,21 @@
     height: 960px;
   }
 }
-@media screen and (min-width: 1440) {
-  .covers-list {
+@media screen and (min-width: 1440px) {
+  .marquee {
     background-image: url(../img/desktop/covers/desk-bg-covers.png);
-    border-radius: 20%;
+    border-radius: 50px;
+    max-width: 1440px;
+    overflow: hidden;
   }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .cover-list {
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .marquee {
       background-image: url(../img/desktop/covers/desk-bg-covers@2x.png);
     }
   }
-  .marquee {
+
+  .covers-content {
     border-radius: 50px;
-    max-width: 1440px;
   }
 }
 @keyframes marqueeLine {
