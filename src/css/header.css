@@ -193,7 +193,8 @@
   }
 
   @media screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ration: 2) {
     .header-menu-container.is-open {
       background-image: url(../img/mobile/hero/modal-back@2x.webp);
     }
@@ -326,12 +327,9 @@
   }
 }
 
+
 /* ======================== HEADER MENU STYLES ========================= */
 
-.header-menu:hover .header-menu-list {
-  opacity: 1;
-  transform: scaleY(1) translateY(0);
-}
 
 .header-menu-list {
   margin: auto;
@@ -345,10 +343,10 @@
   opacity: 0;
 }
 
-/* .header-menu-list_active {
+.header-menu-list_active {
   opacity: 1;
   transform: scaleY(1) translateY(0);
-} */
+}
 
 .header-menu-item-link {
   font-weight: 500;

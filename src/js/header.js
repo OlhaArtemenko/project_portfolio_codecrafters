@@ -1,18 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
     const menuButton = document.querySelector('.menu-btn-desctab');
     const menuList = document.querySelector('.header-menu-list');
+    const headerMenu = document.querySelector('.header-menu');
     const burgerBtn = document.querySelector('.header-burger-btn');
     const menuContainer = document.querySelector('.header-menu-container');
     const closeBtn = document.querySelector('.menu-btn-close');
     const buttonLink = document.querySelector('.header-button-link');
 
-    // menuButton.addEventListener('click', function() {
-    //     if (menuList.classList.contains('header-menu-list_active')) {
-    //         menuList.classList.remove('header-menu-list_active');
-    //     } else {
-    //         menuList.classList.add('header-menu-list_active');
-    //     }
-    // });
+
+    menuButton.addEventListener('mouseenter', function() {
+        menuList.classList.add('header-menu-list_active');
+    });
+
+
+    headerMenu.addEventListener('mouseleave', function() {
+        menuList.classList.remove('header-menu-list_active');
+    });
+
 
     burgerBtn.addEventListener('click', function() {
         menuContainer.classList.toggle('is-open');
@@ -24,9 +28,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     closeBtn.addEventListener('click', function() {
-        menuContainer.classList.add('menu-close-animate'); 
+        menuContainer.classList.add('menu-close-animate');
         setTimeout(function() {
-            menuContainer.classList.remove('menu-close-animate'); 
+            menuContainer.classList.remove('menu-close-animate');
             menuContainer.classList.remove('is-open');
             burgerBtn.classList.remove('visually-hidden');
             closeBtn.classList.add('visually-hidden');
@@ -34,8 +38,9 @@ document.addEventListener('DOMContentLoaded', function() {
             buttonLink.classList.add('btn-link-none');
             menuList.classList.remove('header-menu-list-mobile');
             menuList.classList.add('header-menu-list');
-        }, 300); 
+        }, 300);
     });
+
 
     const menuItemLinks = document.querySelectorAll('.header-menu-item-link');
     menuItemLinks.forEach(function(link) {
@@ -44,8 +49,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+
     buttonLink.addEventListener('click', function() {
         closeBtn.click();
     });
-    
 });
