@@ -95,6 +95,7 @@
   .marquee {
     border-radius: 50px;
     max-width: 1440px;
+    overflow: hidden;
   }
   .covers-content {
     border-radius: 50px;
