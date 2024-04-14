@@ -1,3 +1,5 @@
+/* ======================== MOBILE HEADER STYLES ========================= */
+
 .header {
   position: absolute;
   top: 32px;
@@ -36,7 +38,7 @@
   font-family: 'Inter Tight', sans-serif;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 24px;
   letter-spacing: -0.02em;
 }
 
@@ -59,7 +61,7 @@
   flex-grow: 0;
 }
 
-/* ========================== MOBILE HEADER STYLES ========================= */
+/* ======================== MOBILE MENU STYLES ========================= */
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .menu-btn-desctab {
@@ -124,7 +126,7 @@
     font-family: Inter Tight;
     font-size: 14px;
     font-weight: 500;
-    line-height: 1.3;
+    line-height: 19px;
     text-align: left;
     background: rgb(237, 59, 68);
     letter-spacing: -0.02em;
@@ -146,17 +148,20 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 999999999;
     width: 100%;
     height: 100%;
-    z-index: 999999999;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     background-color: #1c1d20;
     background-size: cover;
-    background-image: url(/img/mobile/hero/modal-back.webp);
+    background-image: url(../img/mobile/hero/modal-back.webp);
     background-repeat: no-repeat;
     background-position: center;
     margin: 0;
     padding: 0;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -168,16 +173,19 @@
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  }
+
+  .menu-close-animate {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
   }
 
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
     screen and (min-device-pixel-ration: 2) {
     .header-menu-container.is-open {
-      background-image: url('../img/mobile/hero/modal-back@2x.webp');
+      background-image: url(../img/mobile/hero/modal-back@2x.webp);
     }
   }
 
@@ -186,8 +194,6 @@
     flex-direction: column;
   }
 }
-
-/* ======================== MOBILE MENU STYLES ========================= */
 
 /* ======================== TABLET HEADER STYLES ========================= */
 
@@ -216,13 +222,13 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 18px 24px 18px 24px;
+    padding: 18px;
     border-radius: 60px;
     color: rgb(250, 250, 250);
     font-family: Inter Tight;
     font-size: 16px;
     font-weight: 500;
-    line-height: 1.8;
+    line-height: 19px;
     text-align: left;
     background: rgb(237, 59, 68);
     letter-spacing: -0.02em;
@@ -271,7 +277,7 @@
     font-family: Inter Tight;
     font-size: 16px;
     font-weight: 500;
-    line-height: 1.8;
+    line-height: 19px;
     text-align: left;
     background: rgb(237, 59, 68);
     letter-spacing: -0.02em;
@@ -307,19 +313,17 @@
   margin: auto;
   text-align: center;
   width: 67px;
-  height: 100%;
+  height: 91px;
   gap: 5px;
   transition: 0.5s;
   transform: scaleY(0) translateY(20%);
   transform-origin: top center;
   opacity: 0;
-  overflow: hidden;
 }
 
 .header-menu-list_active {
   opacity: 1;
   transform: scaleY(1) translateY(0);
-  overflow: hidden;
 }
 
 .header-menu-item-link {

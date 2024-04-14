@@ -1,6 +1,9 @@
+#hero {
+  padding-bottom: 0;
+}
 .hero-section {
   text-align: center;
-  background-image: url('../img/mobile/hero/hero.webp');
+  background-image: url(../img/mobile/hero/hero.webp);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
@@ -9,7 +12,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-section {
-    background-image: url('../img/mobile/hero/hero@2x.webp');
+    background-image: url(../img/mobile/hero/hero@2x.webp);
   }
 }
 @media screen and (max-width: 375px) {
@@ -23,8 +26,6 @@
   display: flex;
   flex-direction: column;
   gap: 212px;
-  /* height: 499px;
-  width: 343px; */
 }
 .hero-title {
   font-weight: 500;
@@ -74,23 +75,22 @@
   letter-spacing: -0.02em;
 }
 
-//////////////////////////////////* TABLET *//////////////////////////////////
+/*================== TABLET ================*/
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .hero-section {
-    background-image: url('../img/tablet/hero/tab_hero.webp');
+    background-image: url(../img/tablet/hero/tab_hero.webp);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero-section {
-      background-image: url('../img/tablet/hero/tab_hero@2x.webp');
+      background-image: url(../img/tablet/hero/tab_hero@2x.webp);
     }
   }
 
   #hero .hero-container {
     gap: 187px;
     width: 704px;
-    height: 692px;
   }
   .hero-title {
     width: 632px;
@@ -124,26 +124,21 @@
   }
 }
 
-////////////////////////////* DESKTOP */////////////////////////////////////
+/*================= DESKTOP =================*/
 
 @media screen and (min-width: 1440px) {
   .hero-section {
-    background-image: url('../img/desktop/hero/desk_hero.webp');
+    background-image: url(../img/desktop/hero/desk_hero.webp);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero-section {
-      background-image: url('../img/desktop/hero/desk_hero@2x.webp');
+      background-image: url(../img/desktop/hero/desk_hero@2x.webp);
     }
   }
-  /* #hero .hero-title {
-    max-width: 1084px;
-    height: 270px;
-  } */
+
   #hero .hero-container {
-    height: 568px;
     width: 1230px;
-    padding-left: 178px;
   }
 }

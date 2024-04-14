@@ -7,8 +7,8 @@
 <path fill="none" d="M26.6667 16H5.33342" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 <path fill="none" d="M13.3333 24L5.33325 16L13.3333 8" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></symbol>
 <symbol id="icon-arrow-narrow-right" viewBox="0 0 32 32">
-<path fill="none" d="M5.33325 16H26.6666" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<path fill="none" d="M18.6667 8L26.6667 16L18.6667 24" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></symbol>
+<path fill="none" d="M5.33325 16H26.6666" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<path fill="none" d="M18.6667 8L26.6667 16L18.6667 24" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></symbol>
 <symbol id="icon-arrow-top" viewBox="0 0 32 32">
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.2" d="M24 20l-8-8-8 8"></path>
 </symbol>

@@ -170,7 +170,7 @@
         margin-bottom: 46px;
     }
     .swiper-wrapper .swiper-slide {
-        display: flex;
+        /* display: flex; */
         flex-direction: row;
     }
     .projects-description{
