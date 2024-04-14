@@ -110,7 +110,7 @@ li.info-item.ac .accordion-button-up-down {
   position: absolute;
   top: 0;
   right: 0;
-  transition: transform 250ms linear;
+  transition: border 250ms linear, box-shadow 250ms linear;
 }
 
 .button-roll {
@@ -119,6 +119,7 @@ li.info-item.ac .accordion-button-up-down {
 
 .accordion-button-up-down:hover {
   box-shadow: 0 0 15px #ed3b44;
+  border: 1px solid #ed3b44;
 }
 
 .accordion-button-up-down svg {
@@ -155,11 +156,12 @@ li.info-item.ac .accordion-button-up-down {
 
 .skills-slide.swiper-slide-active {
   background-color: #ed3b44;
+  /* transition: background-colr 250ms linear, box-shadow 250ms linear; */
 }
-
+/* 
 .skills-slide.swiper-slide-active:hover {
   box-shadow: 0 0 15px #ed3b44;
-}
+} */
 
 .skills-button-next svg {
   stroke: #3b3b3b;
@@ -189,6 +191,7 @@ div.swiper-button-next.skills-button-next {
   border-radius: 50%;
   pointer-events: all;
   opacity: inherit;
+  transition: box-shadow 250ms linear;
 }
 
 div.swiper-button-next.skills-button-next:hover {
