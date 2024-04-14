@@ -128,6 +128,7 @@ li.info-item.ac .accordion-button-up-down {
   position: relative;
   display: flex;
   margin-top: 32px;
+  gap: 52px;
 }
 
 .skills-container {
@@ -175,10 +176,14 @@ div.swiper-button-next.skills-button-next {
   pointer-events: all;
   opacity: inherit;
 }
-
 /* ================== /STYLES FOR MOBILE ================== */
 
 /* ================== STYLES FOR TABLET ================== */
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .about-me-skills-wrapper {
+    gap: 64px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .about-me {
@@ -236,7 +241,9 @@ div.swiper-button-next.skills-button-next {
   .about-me {
     padding-top: 96px;
   }
-
+  .about-me-skills-wrapper {
+    gap: 72px;
+  }
   .title-with-photo {
     display: flex;
     flex-direction: row;
