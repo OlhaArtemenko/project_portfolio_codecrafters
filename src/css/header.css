@@ -346,10 +346,10 @@
   opacity: 0;
 }
 
-.header-menu-list_active {
+/* .header-menu-list_active {
   opacity: 1;
   transform: scaleY(1) translateY(0);
-}
+} */
 
 .header-menu-item-link {
   font-weight: 500;
