@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeBtn = document.querySelector('.menu-btn-close');
     const buttonLink = document.querySelector('.header-button-link');
 
-    menuButton.addEventListener('click', function() {
-        if (menuList.classList.contains('header-menu-list_active')) {
-            menuList.classList.remove('header-menu-list_active');
-        } else {
-            menuList.classList.add('header-menu-list_active');
-        }
-    });
+    // menuButton.addEventListener('click', function() {
+    //     if (menuList.classList.contains('header-menu-list_active')) {
+    //         menuList.classList.remove('header-menu-list_active');
+    //     } else {
+    //         menuList.classList.add('header-menu-list_active');
+    //     }
+    // });
 
     burgerBtn.addEventListener('click', function() {
         menuContainer.classList.toggle('is-open');
