@@ -80,7 +80,7 @@
     height: 960px;
   }
 }
-@media screen and (min-width: 1440) {
+@media screen and (min-width: 1440px) {
   .covers-list {
     background-image: url(../img/desktop/covers/desk-bg-covers.png);
     border-radius: 20%;
