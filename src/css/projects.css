@@ -162,7 +162,7 @@
   .swiper {
     margin-bottom: 46px;
   }
-  .swiper-wrapper .swiper-slide {
+  .swiper-wrapper .swiper-slide-project {
     display: flex;
     flex-direction: row;
   }

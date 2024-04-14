@@ -89,6 +89,8 @@ button {
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
   section {
     padding-bottom: 164px;
