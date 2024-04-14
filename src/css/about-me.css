@@ -1,33 +1,33 @@
 /* ================== STYLES FOR MOBILE ================== */
+
 .about-me {
   padding-top: 64px;
-  padding-bottom: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-.about-conteiner {
-  position: relative;
 }
 
 .title-with-photo {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.title {
+.about-image {
+  border-radius: 24px;
+}
+
+.title-ab {
   padding: 32px;
   height: 500px;
-  max-width: 343px;
+  width: 343px;
   background-color: #242527;
   border-radius: 24px;
   margin-bottom: 16px;
   box-sizing: border-box;
 }
 
-.title-text {
+.title-text-ab {
   width: 279px;
   font-size: 24px;
   line-height: 1.17;
@@ -48,7 +48,6 @@
 .accordion-info-about-me {
   margin-left: auto;
   margin-right: auto;
-  width: 343px;
 }
 
 div.about-me .accordion-info-list {
@@ -155,14 +154,18 @@ li.info-item.ac .accordion-button-up-down {
 
 .skills-button-next svg {
   stroke: #3b3b3b;
+  width: 28px;
   fill: none;
-  width: 40px;
+}
+
+.about-me-skills-svg {
+  cursor: pointer;
 }
 
 div.swiper-button-next.skills-button-next {
   position: absolute;
   top: 50px;
-  right: 16px;
+  right: 7px;
   width: 28px;
   height: 28px;
   z-index: 99999;
@@ -186,13 +189,13 @@ div.swiper-button-next.skills-button-next {
     margin-bottom: 64px;
   }
 
-  .title {
+  .title-ab {
     padding: 64px;
     height: 700px;
-    max-width: 704px;
+    width: 704px;
   }
 
-  .title-text {
+  .title-text-ab {
     width: 576px;
     font-size: 38px;
     line-height: 1.05;
@@ -236,17 +239,19 @@ div.swiper-button-next.skills-button-next {
 
   .title-with-photo {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 96px;
   }
 
-  .title {
+  .title-ab {
     max-width: 680px;
     margin-bottom: 0;
-    margin-right: 16px;
   }
 
-  .title-text {
-    width: 576px;
+  .title-text-ab {
+    width: 552px;
+    height: 200px;
     font-size: 38px;
     line-height: 1.05;
     letter-spacing: -0.03em;
