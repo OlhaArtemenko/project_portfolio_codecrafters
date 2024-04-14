@@ -25,8 +25,6 @@
   height: 39px;
   letter-spacing: -0.02em;
   color: #fafafa;
-  margin-left: 151px;
-  margin-right: 151px;
   text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-skip-ink: none;
@@ -215,7 +213,10 @@
   }
 
   .header-menu {
+    align-items: center;
     display: flex;
+    flex-direction: column;
+    width: 67px;
   }
 
   .header-burger-btn {
@@ -227,6 +228,7 @@
   }
 
   .header-button-link {
+    flex-wrap: nowrap;
     position: static;
     width: 163px;
     height: 55px;
@@ -245,6 +247,7 @@
     background: rgb(237, 59, 68);
     letter-spacing: -0.02em;
     transition: color 0.3s ease;
+    margin-left: 151px;
   }
 
   .header-button-link:hover {
@@ -252,7 +255,7 @@
   }
 }
 
-/* ======================== desktop HEADER STYLES ========================= */
+/* ======================== DESKTOP HEADER STYLES ========================= */
 
 @media screen and (min-width: 1440px) {
   .menu-btn-close {
@@ -265,8 +268,13 @@
   .menu-btn-desctab {
     display: none;
   }
+
+  
   .header-menu {
+    align-items: center;
     display: flex;
+    flex-direction: column;
+    width: 67px;
   }
   .header-menu-container {
     display: flex;
@@ -277,6 +285,7 @@
   }
 
   .header-button-link {
+    flex-wrap: nowrap;
     position: static;
     width: 163px;
     height: 55px;
@@ -296,6 +305,7 @@
     letter-spacing: -0.02em;
     transition: color 0.3s ease;
     transition: transform 0.3s ease;
+    margin-left: 487px;
   }
 
   .header-button-link:hover {
@@ -308,10 +318,7 @@
     background-color: transparent;
     border: none;
     width: 60px;
-    height: 39px;
     color: #fafafa;
-    margin-left: 487px;
-    margin-right: 487px;
     text-decoration: underline;
     margin-bottom: 18px;
     transition: color 0.3s ease;
@@ -321,9 +328,9 @@
 
 /* ======================== HEADER MENU STYLES ========================= */
 
-.header-menu {
-  display: flex;
-  flex-direction: column;
+.header-menu:hover .header-menu-list {
+  opacity: 1;
+  transform: scaleY(1) translateY(0);
 }
 
 .header-menu-list {
@@ -338,10 +345,10 @@
   opacity: 0;
 }
 
-.header-menu-list_active {
+/* .header-menu-list_active {
   opacity: 1;
   transform: scaleY(1) translateY(0);
-}
+} */
 
 .header-menu-item-link {
   font-weight: 500;
