@@ -22,8 +22,14 @@
 
     <div class="header-menu-container">
       <div class="header-menu">
-        <button class="menu-btn-desctab" type="button">Menu</button>
-        <button type="button" class="menu-btn-close visually-hidden">
+        <button class="menu-btn-desctab" type="button" aria-label="menu">
+          Menu
+        </button>
+        <button
+          type="button"
+          class="menu-btn-close visually-hidden"
+          aria-label="menu-close"
+        >
           <svg
             class="menu-btn-icon-close"
             width="28"
@@ -54,7 +60,11 @@
       >
     </div>
 
-    <button type="button" class="header-burger-btn">
+    <button
+      type="button"
+      class="header-burger-btn"
+      aria-label="open-mobile-menu"
+    >
       <svg
         class="header-burger-btn-icon"
         width="21"
