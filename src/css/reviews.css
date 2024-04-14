@@ -59,7 +59,7 @@
   height: 52px;
   background: transparent;
   outline: transparent;
-  border: 1px solid #3b3b3b;
+  border: 1px solid rgba(250, 250, 250, 0.5);
   transition: border 250ms linear;
 }
 
@@ -67,7 +67,7 @@
 .next-icon-btn {
   stroke-width: 2px;
   fill: transparent;
-  stroke: #3b3b3b;
+  stroke: white;
   transition: stroke 250ms linear, fill 250ms linear;
 }
 
@@ -75,16 +75,17 @@
 .next-review-btn:hover,
 .prev-review-btn:focus,
 .next-review-btn:focus {
-  border-color: #fafafa;
-  cursor: pointer;
+
 }
 
-.prev-review-btn:hover .prev-icon-btn,
-.next-review-btn:hover .next-icon-btn,
-.prev-review-btn:focus .prev-icon-btn,
-.next-review-btn:focus .next-icon-btn {
-  stroke: #fafafa;
-  fill: #fafafa;
+
+.swiper-button-prev:hover .prev-icon-btn,
+.swiper-button-next:hover .next-icon-btn,
+.swiper-button-prev:focus .prev-icon-btn,
+.swiper-button-next:focus .next-icon-btn,
+.swiper-button-prev:active .prev-icon-btn,
+.swiper-button-next:active .next-icon-btn {
+      transform: scale(1.2);
 }
 
 .prev-review-btn:disabled,
