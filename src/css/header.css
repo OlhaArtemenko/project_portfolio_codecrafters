@@ -64,6 +64,16 @@
   transform: scale(1.07);
 }
 
+.header-menu-item:hover,
+.header-menu-item:focus {
+  transition: 250ms linear;
+}
+
+.header-button-link:hover,
+.header-button-link:focus {
+  transition: 250ms linear;
+}
+
 /* ======================== MOBILE MENU STYLES ========================= */
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -145,10 +155,11 @@
     margin-right: auto;
     margin-left: auto;
     transition: color 0.3s ease;
+  
   }
 
   .btn-link-none {
-    display: none;
+    display: none;  
   }
 
   .header-button-link:hover {
