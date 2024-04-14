@@ -117,6 +117,10 @@ li.info-item.ac .accordion-button-up-down {
   transform: rotateZ(180deg);
 }
 
+.accordion-button-up-down:hover {
+  box-shadow: 0 0 15px #ed3b44;
+}
+
 .accordion-button-up-down svg {
   height: 20px;
   width: 20px;
@@ -153,6 +157,10 @@ li.info-item.ac .accordion-button-up-down {
   background-color: #ed3b44;
 }
 
+.skills-slide.swiper-slide-active:hover {
+  box-shadow: 0 0 15px #ed3b44;
+}
+
 .skills-button-next svg {
   stroke: #3b3b3b;
   width: 28px;
@@ -161,6 +169,10 @@ li.info-item.ac .accordion-button-up-down {
 
 .about-me-skills-svg {
   cursor: pointer;
+}
+
+.about-me-skills-svg:hover {
+  stroke: #fafafa;
 }
 
 div.swiper-button-next.skills-button-next {
@@ -172,10 +184,17 @@ div.swiper-button-next.skills-button-next {
   z-index: 99999;
   overflow: hidden;
   display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   pointer-events: all;
   opacity: inherit;
 }
+
+div.swiper-button-next.skills-button-next:hover {
+  box-shadow: 0 0 15px #ed3b44;
+}
+
 /* ================== /STYLES FOR MOBILE ================== */
 
 /* ================== STYLES FOR TABLET ================== */
