@@ -57,10 +57,10 @@
 .input-footer:hover {
   border-color: #fafafa;
 }
-.input-footer:user-valid {
+.input-footer:valid {
   border-color: #3cbc81;
 }
-.input-footer:user-invalid {
+.input-footer:invalid:focus {
   border-color: #e74a3b;
 }
 .input-footer::placeholder {
@@ -127,8 +127,7 @@
   width: 100%;
   height: 100%;
   background-color: #0f0f1099;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms linear, visibility 250ms linear;
 }
 .modal-window {
   position: absolute;
@@ -143,7 +142,7 @@
   min-height: 276px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms linear;
   padding: 64px 32px 64px 32px;
 }
 .modal-button {
