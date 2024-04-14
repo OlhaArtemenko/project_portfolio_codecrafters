@@ -96,6 +96,9 @@
     border-radius: 50px;
     max-width: 1440px;
   }
+  .covers-content {
+    border-radius: 50px;
+  }
 }
 @keyframes marqueeLine {
   0% {
