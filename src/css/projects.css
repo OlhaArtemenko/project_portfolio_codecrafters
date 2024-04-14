@@ -1,3 +1,4 @@
+
 .projects {
 }
 
@@ -93,6 +94,7 @@
     align-items: center;
     gap: 12px;
 }
+
 .wrapper-btn-arrows .swiper-btn-prev,
 .wrapper-btn-arrows .swiper-btn-next {
     position: static;
@@ -127,6 +129,15 @@
 .swiper-button-next.disabled {
     pointer-events: none;
     opacity: 0.5;
+}
+
+.swiper-btn-prev:hover .btn-arrow-prev,
+.swiper-btn-next:hover .btn-arrow-next,
+.swiper-btn-prev:focus .btn-arrow-prev,
+.swiper-btn-next:focus .btn-arrow-next,
+.swiper-btn-prev:active .btn-arrow-prev,
+.swiper-btn-next:active .btn-arrow-next {
+    transform: scale(1.2);
 }
 
 @media screen and (min-width: 768px) {
