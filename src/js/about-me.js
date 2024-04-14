@@ -21,7 +21,7 @@ new Accordion('.accordion-info-list', {
 const swiper = new Swiper('.skills-container', {
   modules: [Navigation, Keyboard, Mousewheel],
   loop: true,
-  speed: 700,
+  speed: 600,
   grabCursor: true,
   allowTouchMove: true,
   navigation: {
@@ -41,8 +41,25 @@ const swiper = new Swiper('.skills-container', {
     invert: false,
   },
   on: {
-    reachEnd: function () {
-      this.slideNext();
+    init: function () {
+      const activeIndex = this.activeIndex;
+      this.slides.forEach((slide, index) => {
+        if (index === activeIndex) {
+          slide.classList.add('active-slide');
+        } else {
+          slide.classList.remove('active-slide');
+        }
+      });
+    },
+    slideChange: function () {
+      const activeIndex = this.activeIndex;
+      this.slides.forEach((slide, index) => {
+        if (index === activeIndex) {
+          slide.classList.add('active-slide');
+        } else {
+          slide.classList.remove('active-slide');
+        }
+      });
     },
   },
 });
