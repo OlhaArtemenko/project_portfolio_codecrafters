@@ -119,15 +119,13 @@ li.info-item.ac .accordion-button-up-down {
 
 .accordion-button-up-down:hover {
   box-shadow: 0 0 15px #ed3b44;
-  border: 1px solid #ed3b44;
 }
 
 .accordion-button-up-down svg {
   height: 20px;
   width: 20px;
-  stroke: #fafafa;
+  stroke: 1px solid #fafafa;
 }
-
 /* ================== /  SKILLS STYLES FOR MOBILE ================== */
 .about-me-skills-wrapper {
   position: relative;
