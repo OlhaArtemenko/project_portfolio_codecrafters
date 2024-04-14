@@ -55,11 +55,11 @@
   stroke: rgb(0, 0, 0);
   fill: rgb(237, 59, 68);
   padding: 12px;
+  transition: stroke 250ms linear;
 }
 .benefits-section-icon-bl:hover,
 .benefits-section-icon-bl:focus {
   stroke: rgb(250, 250, 250);
-  transition: 250ms linear;
 }
 .order-link {
   margin: 32px 0px;
@@ -72,11 +72,11 @@
   box-sizing: border-box;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
+  transition: border-color 250ms linear;
 }
 .benefits-link:hover,
 .benefits-link:focus {
-  background-color: #3b3b3b;
-  transition: 250ms linear;
+  border-color: #fafafa;
 }
 
 /* =====================TABLET=================== */
