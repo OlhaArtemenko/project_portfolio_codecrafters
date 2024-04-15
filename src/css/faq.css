@@ -71,6 +71,14 @@
   width: 20px;
   stroke: #fafafa;
 }
+
+.faq-list .ac-faq-li.active .fqa-btn-open {
+  transform: rotateZ(180deg);
+}
+
+.faq-list .ac-faq-li:not(.active) .fqa-btn-open {
+  transform: rotateZ(0deg);
+}
 @media screen and (min-width: 768px) {
   .faq-list .ac-faq-li {
     padding-top: 32px;
