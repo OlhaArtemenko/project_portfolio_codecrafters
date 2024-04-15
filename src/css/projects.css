@@ -104,12 +104,20 @@
   height: 24px;
   stroke: #fafafa;
 }
-.swiper-button-prev.disabled,
-.swiper-button-next.disabled {
+.project-swiper-button-prev.disabled,
+.project-swiper-button-next.disabled {
   pointer-events: none;
-  opacity: 0.5;
+  border-color: #fafafa33;
+}
+.project-swiper-button-prev.disabled .btn-arrow-prev,
+.project-swiper-button-next.disabled .btn-arrow-next {
+  stroke: #fafafa33;
 }
 
+.swiper-wrapper .swiper-slide-project {
+  display: flex;
+  flex-direction: row;
+}
 @media screen and (min-width: 768px) {
   .swiper {
     margin-bottom: 64px;

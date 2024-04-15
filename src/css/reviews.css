@@ -76,7 +76,14 @@
   cursor: default;
   border-color: #fafafa33;
 }
-
+.prev-review-btn:disabled .prev-icon-btn,
+.next-review-btn:disabled .next-icon-btn {
+  stroke: #fafafa33;
+}
+.swiper-wrapper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+}
 @media screen and (min-width: 768px) {
   .reviews-swipe-btns-wrapper {
     gap: 20px;
@@ -97,10 +104,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .swiper-wrapper .swiper-slide {
-    display: flex;
-    flex-direction: column;
-  }
   /* server eror */
 
   .popup-server-error {
