@@ -58,7 +58,6 @@
   width: 52px;
   height: 52px;
   background: transparent;
-  outline: transparent;
   border: 1px solid #fafafa;
   transition: border 250ms linear;
 }

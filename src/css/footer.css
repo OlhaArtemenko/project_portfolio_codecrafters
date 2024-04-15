@@ -88,13 +88,11 @@
   height: 100px;
   border: none;
   border-radius: 50%;
-  transition: background-color 250ms linear, box-shadow 250ms linear,
-    font-weight 350ms linear;
+  transition: background-color 250ms linear, font-weight 350ms linear;
 }
 .form-button:hover,
 .form-button:focus {
   background-color: #e0373f;
-  box-shadow: 0 0 15px #ed3b44;
   font-weight: 700;
 }
 .contacts-footer {

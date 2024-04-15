@@ -154,24 +154,22 @@ li.info-item.ac .accordion-button-up-down {
 
 .skills-slide.swiper-slide-active {
   background-color: #ed3b44;
-  /* transition: background-colr 250ms linear, box-shadow 250ms linear; */
+  font-weight: 700;
+  transition: background-color 700ms linear, font-weight 700ms linear;
 }
-/* 
-.skills-slide.swiper-slide-active:hover {
-  box-shadow: 0 0 15px #ed3b44;
-} */
 
 .skills-button-next svg {
-  stroke: #3b3b3b;
+  stroke: #fafafa33;
   width: 28px;
   fill: none;
 }
 
 .about-me-skills-svg {
   cursor: pointer;
+  transition: stroke 250ms linear;
 }
 
-.about-me-skills-svg:hover {
+div.swiper-button-next.skills-button-next:hover .about-me-skills-svg {
   stroke: #fafafa;
 }
 
@@ -189,6 +187,8 @@ div.swiper-button-next.skills-button-next {
   border-radius: 50%;
   pointer-events: all;
   opacity: inherit;
+  /* border: 1px solid rgba(250, 250, 250, 0.2); */
+
   transition: box-shadow 250ms linear;
 }
 
@@ -302,7 +302,7 @@ div.swiper-button-next.skills-button-next:hover {
   }
 
   .skills-container {
-    width: 100%;
+    width: 1200px;
     overflow: hidden;
     margin-top: 96px;
     margin-left: 32px;
