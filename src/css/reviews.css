@@ -80,10 +80,11 @@
 .next-review-btn:disabled .next-icon-btn {
   stroke: #fafafa33;
 }
-.swiper-wrapper .swiper-slide {
+.swiper-wrapper .reviews-list-item {
   display: flex;
   flex-direction: column;
 }
+
 @media screen and (min-width: 768px) {
   .reviews-swipe-btns-wrapper {
     gap: 20px;
