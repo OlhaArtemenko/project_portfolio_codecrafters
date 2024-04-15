@@ -2,34 +2,40 @@ import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 
 import 'swiper/css';
+document.addEventListener('DOMContentLoaded', function () {
+  const WorkSwiper = new Swiper('.projects .swiper', {
+    loop: false,
+    navigation: {
+      nextEl: '.project-swiper-button-next',
+      prevEl: '.project-swiper-button-prev',
+    },
+    modules: [Navigation, Pagination],
+  });
 
-const WorkSwiper = new Swiper('.project-swiper-div', {
-  loop: false,
-  speed: 800,
+  function setButtonStyles() {
+    const prevButton = document.querySelector('.project-swiper-button-prev');
+    const nextButton = document.querySelector('.project-swiper-button-next');
 
-  navigation: {
-    nextEl: '.project-swiper-button-next',
-    prevEl: '.project-swiper-button-prev',
-    disabledClass: 'disabled',
-  },
-  modules: [Navigation, Pagination],
+    const isFirstSlide = WorkSwiper.isBeginning;
+    const isLastSlide = WorkSwiper.isEnd;
+
+    if (isFirstSlide) {
+      prevButton.classList.add('disabled');
+    } else {
+      prevButton.classList.remove('disabled');
+    }
+
+    if (isLastSlide) {
+      nextButton.classList.add('disabled');
+    } else {
+      nextButton.classList.remove('disabled');
+    }
+  }
+
+  setButtonStyles();
+
+  // Додаємо обробник події для встановлення стилів при зміні слайда
+  WorkSwiper.on('slideChange', function () {
+    setButtonStyles();
+  });
 });
-
-const prevButtonPr = document.querySelector('.project-swiper-button-prev');
-const nextButtonPr = document.querySelector('.project-swiper-button-next');
-
-function setButtonStyles() {
-  const isPrevDisabled = prevButtonPr.disabled;
-  const isNextDisabled = nextButtonPr.disabled;
-
-  prevButtonPr.style.color = isPrevDisabled ? '#fafafa33' : '#fafafa';
-  prevButtonPr.style.borderColor = isPrevDisabled ? '#fafafa33' : '#fafafa';
-
-  nextButtonPr.style.color = isNextDisabled ? '#fafafa33' : '#fafafa';
-  nextButtonPr.style.borderColor = isNextDisabled ? '#fafafa33' : '#fafafa';
-}
-
-setButtonStyles();
-
-prevButtonPr.addEventListener('click', setButtonStyles);
-nextButtonPr.addEventListener('click', setButtonStyles);
