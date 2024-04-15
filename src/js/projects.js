@@ -15,22 +15,21 @@ const WorkSwiper = new Swiper('.project-swiper-div', {
   modules: [Navigation, Pagination],
 });
 
-// Функція для встановлення стилів кнопок перемикання
+const prevButtonPr = document.querySelector('.project-swiper-button-prev');
+const nextButtonPr = document.querySelector('.project-swiper-button-next');
+
 function setButtonStyles() {
-  const prevButton = document.querySelector('.project-swiper-button-prev');
-  const nextButton = document.querySelector('.project-swiper-button-next');
+  const isPrevDisabled = prevButtonPr.disabled;
+  const isNextDisabled = nextButtonPr.disabled;
 
-  const isPrevDisabled = prevButton.classList.contains('disabled');
-  const isNextDisabled = nextButton.classList.contains('disabled');
+  prevButtonPr.style.color = isPrevDisabled ? '#fafafa33' : '#fafafa';
+  prevButtonPr.style.borderColor = isPrevDisabled ? '#fafafa33' : '#fafafa';
 
-  prevButton.style.color = isPrevDisabled ? '#fafafa33' : '#fafafa';
-  prevButton.style.borderColor = isPrevDisabled ? '#fafafa33' : '#fafafa';
-
-  nextButton.style.color = isNextDisabled ? '#fafafa33' : '#fafafa';
-  nextButton.style.borderColor = isNextDisabled ? '#fafafa33' : '#fafafa';
+  nextButtonPr.style.color = isNextDisabled ? '#fafafa33' : '#fafafa';
+  nextButtonPr.style.borderColor = isNextDisabled ? '#fafafa33' : '#fafafa';
 }
 
 setButtonStyles();
 
-prevButton.addEventListener('click', setButtonStyles);
-nextButton.addEventListener('click', setButtonStyles);
+prevButtonPr.addEventListener('click', setButtonStyles);
+nextButtonPr.addEventListener('click', setButtonStyles);
