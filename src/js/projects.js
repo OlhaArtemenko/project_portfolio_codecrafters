@@ -1,16 +1,19 @@
-import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
 
-import 'swiper/css'
+import 'swiper/css';
 
-document.addEventListener("DOMContentLoaded", function () {
-    const WorkSwiper = new Swiper(".projects .swiper", {
-        loop: false,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-            disabledClass: "disabled",
-        },
-        modules: [Navigation, Pagination],
-    });
+document.addEventListener('DOMContentLoaded', function () {
+  const WorkSwiper = new Swiper('.projects .swiper', {
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    centeredSlides: true,
+    navigation: {
+      nextEl: '.projects-swiper-button-next',
+      prevEl: '.projects-swiper-button-prev',
+      disabledClass: 'disabled',
+    },
+    modules: [Navigation, Pagination],
+  });
 });
