@@ -179,7 +179,7 @@ div.swiper-button-next.skills-button-next {
   right: 7px;
   width: 28px;
   height: 28px;
-  z-index: 99999;
+  z-index: 9999;
   overflow: hidden;
   display: flex;
   justify-content: center;
