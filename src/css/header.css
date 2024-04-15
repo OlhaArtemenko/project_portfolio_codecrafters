@@ -245,7 +245,7 @@
     font-weight: 500;
     line-height: 19px;
     text-align: left;
-    background-image: linear-gradient(0.25turn, #ff4534, #a60000);
+    background-image: linear-gradient(0.25turn, #ff4a3a, #b30000);
     letter-spacing: -0.02em;
     transition: background-color 250ms linear, font-weight 250ms linear;
     margin-left: 151px;
@@ -328,7 +328,7 @@
     font-weight: 500;
     line-height: 19px;
     text-align: left;
-    background-image: linear-gradient(0.25turn, #ff4534, #a60000);
+    background-image: linear-gradient(0.25turn, #ff4a3a, #b30000);
     letter-spacing: -0.02em;
     transition: transform 250ms linear, background-color 250ms linear,
       font-weight 250ms linear;
