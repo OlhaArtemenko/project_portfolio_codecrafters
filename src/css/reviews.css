@@ -64,7 +64,6 @@
 
 .prev-icon-btn,
 .next-icon-btn {
-  stroke-width: 2px;
   fill: transparent;
   stroke: #fafafa;
   transition: stroke 250ms linear, fill 250ms linear;
@@ -73,7 +72,7 @@
 .prev-review-btn:disabled,
 .next-review-btn:disabled {
   cursor: default;
-  border-color: #fafafa33;
+  border: 1px solid #fafafa33;
 }
 .prev-review-btn:disabled .prev-icon-btn,
 .next-review-btn:disabled .next-icon-btn {
