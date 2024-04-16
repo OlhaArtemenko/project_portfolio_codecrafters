@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const faqItems = document.querySelectorAll('.ac-faq-li');
   faqItems.forEach((faqItem, index) => {
     const panel = faqItem.querySelector('.ac-panel');
-    panel.style.maxHeight = '0'; // Закрити панель
+    panel.style.maxHeight = '0';
     panel.style.overflow = 'hidden';
     panel.style.transition = 'max-height 0.7s ease';
   });
@@ -33,15 +33,12 @@ document.addEventListener('DOMContentLoaded', () => {
     button.addEventListener('click', toggleAccordion);
   });
 
-  // Додаємо обробник події прокрутки
   window.addEventListener('scroll', () => {
-    // Перевіряємо, чи акордеон повністю видимий на екрані
     const isVisible = Array.from(faqItems).some(item => {
       const bounding = item.getBoundingClientRect();
       return bounding.top >= 0 && bounding.bottom <= window.innerHeight;
     });
 
-    // Якщо акордеон не видно, закрити всі панелі
     if (!isVisible) {
       faqItems.forEach(faqItem => {
         const panel = faqItem.querySelector('.ac-panel');
@@ -51,7 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Ініціалізація бібліотеки accordion-js
   new Accordion('.faq-list', {
     duration: 700,
     showMultiple: false,

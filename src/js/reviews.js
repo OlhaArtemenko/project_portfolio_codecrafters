@@ -120,6 +120,5 @@ function setButtonStyles() {
 
 setButtonStyles();
 
-// Додаємо обробники подій для встановлення стилів при зміні стану кнопок
 prevButton.addEventListener('click', setButtonStyles);
 nextButton.addEventListener('click', setButtonStyles);

@@ -64,15 +64,15 @@ const swiper = new Swiper('.skills-container', {
     },
   },
 });
-// Add event listener for 'next' button
+
 const nextButton = document.querySelector('.skills-button-next');
 nextButton.addEventListener('click', function () {
   const visibleSlides = swiper.slides.filter(slide => slide.isVisible());
   const isEnd = swiper.isEnd && visibleSlides.length === swiper.slides.length;
 
   if (isEnd || visibleSlides.length === swiper.slides.lengthVisible) {
-    swiper.slideTo(0); // Перехід до першого елемента
+    swiper.slideTo(0);
   } else {
-    swiper.slideNext(); // Виклик методу slideNext() для переміщення наступного слайда
+    swiper.slideNext();
   }
 });

@@ -112,10 +112,6 @@
   stroke: #fafafa33;
 }
 
-/* .swiper-wrapper .swiper-slide {
-  display: flex;
-  flex-direction: column;
-} */
 @media screen and (min-width: 768px) {
   .swiper {
     margin-bottom: 64px;
@@ -128,7 +124,6 @@
     margin-bottom: 164px;
   }
   .projects-description-skills-item {
-    /* padding: 18px; */
     height: 55px;
   }
   .projects-description-text {
