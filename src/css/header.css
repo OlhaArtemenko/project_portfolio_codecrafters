@@ -151,7 +151,7 @@
 
   .header-button-link:active {
     background-color: rgb(198, 42, 45);
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .header-menu-container {
@@ -286,7 +286,7 @@
 
   .header-button-link:hover {
     background-color: rgb(198, 42, 45);
-    font-weight: 700;
+    font-weight: 600;
   }
 }
 
@@ -377,7 +377,7 @@
 
   .header-button-link:hover {
     background-color: rgb(198, 42, 45);
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .menu-btn-desctab {

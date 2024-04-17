@@ -29,19 +29,18 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 16px;
   top: -200px;
   transform: rotate(16deg);
 }
 .marquee-inner {
   display: flex;
   margin-bottom: 16px;
-  gap: 20px;
+  gap: 16px;
   transform: rotate(16deg);
 }
 
 .marquee-line {
-  /* height: 160px; */
   background-color: transparent;
   flex-shrink: 0;
   margin-right: 10px;
