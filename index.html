@@ -12,20 +12,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,500..700;1,500..700&display=swap"
       rel="stylesheet"
-      as="style"
-      onload="this.onload=null; this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,500..700;1,500..700&display=swap"
+      media="print"
+      onload="this.onload=null; this.removeAttribute('media');"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    
+    <link
+      rel="stylesheet"
+      href="data:text/css;base64,QGltcG9ydCB1cmwoJy4vcmVzZXQuY3NzJyk7CkBpbXBvcnQgdXJsKCcuL2hlYWRlci5jc3MnKTsKQGltcG9ydCB1cmwoJy4vaGVyby5jc3MnKTsKQGltcG9ydCB1cmwoJy4vYWJvdXQtbWUuY3NzJyk7CkBpbXBvcnQgdXJsKCcuL2JlbmVmaXRzLmNzcycpOwpAaW1wb3J0IHVybCgnLi9wcm9qZWN0cy5jc3MnKTsKQGltcG9ydCB1cmwoJy4vZmFxLmNzcycpOwpAaW1wb3J0IHVybCgnLi9jb3ZlcnMuY3NzJyk7CkBpbXBvcnQgdXJsKCcuL3Jldmlld3MuY3NzJyk7CkBpbXBvcnQgdXJsKCcuL2Zvb3Rlci5jc3MnKTsKCjpyb290IHsKICBmb250LWZhbWlseTogSW50ZXIsIEF2ZW5pciwgSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZjsKICBmb250LXNpemU6IDE2cHg7CiAgbGluZS1oZWlnaHQ6IDI0cHg7CiAgZm9udC13ZWlnaHQ6IDQwMDsKCiAgZm9udC1zeW50aGVzaXM6IG5vbmU7CiAgdGV4dC1yZW5kZXJpbmc6IG9wdGltaXplTGVnaWJpbGl0eTsKICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDsKICAtbW96LW9zeC1mb250LXNtb290aGluZzogZ3JheXNjYWxlOwogIC13ZWJraXQtdGV4dC1zaXplLWFkanVzdDogMTAwJTsKfQpodG1sIHsKICBzY3JvbGwtYmVoYXZpb3I6IHNtb290aDsKfQoudmlzdWFsbHktaGlkZGVuIHsKICBwb3NpdGlvbjogYWJzb2x1dGU7CiAgd2lkdGg6IDFweDsKICBoZWlnaHQ6IDFweDsKICBtYXJnaW46IC0xcHg7CiAgYm9yZGVyOiAwOwogIHBhZGRpbmc6IDA7CiAgd2hpdGUtc3BhY2U6IG5vd3JhcDsKICBjbGlwLXBhdGg6IGluc2V0KDEwMCUpOwogIGNsaXA6IHJlY3QoMCAwIDAgMCk7CiAgb3ZlcmZsb3c6IGhpZGRlbjsKfQpib2R5IHsKICBmb250LWZhbWlseTogJ0ludGVyIFRpZ2h0Jywgc2Fucy1zZXJpZjsKICBiYWNrZ3JvdW5kLWNvbG9yOiAjMWMxZDIwOwogIGNvbG9yOiAjZmFmYWZhOwp9CmlucHV0LAp0ZXh0YXJlYSwKYnV0dG9uIHsKICBmb250LWZhbWlseTogaW5oZXJpdDsKfQouY29udGFpbmVyIHsKICBwYWRkaW5nOiAwIDE2cHg7CiAgbWluLXdpZHRoOiAzMjBweDsKICBtYXgtd2lkdGg6IDM3NXB4OwoKICBtYXJnaW4tbGVmdDogYXV0bzsKICBtYXJnaW4tcmlnaHQ6IGF1dG87Cn0KCkBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDMyMHB4KSBhbmQgKG1heC13aWR0aDogNzY3cHgpIHsKICAuY29udGFpbmVyIHsKICAgIG1pbi13aWR0aDogMzIwcHg7CiAgICBtYXgtd2lkdGg6IDM3NXB4OwogIH0KICBzZWN0aW9uIHsKICAgIHBhZGRpbmctYm90dG9tOiA2NHB4OwogIH0KICAuZm9vdGVyIHsKICAgIHBhZGRpbmctYm90dG9tOiAzMnB4OwogIH0KfQoKQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogNzY4cHgpIHsKICBzZWN0aW9uIHsKICAgIHBhZGRpbmctYm90dG9tOiA5NnB4OwogIH0KICAuZm9vdGVyIHsKICAgIHBhZGRpbmctYm90dG9tOiAxNjlweDsKICB9CiAgLmNvbnRhaW5lciB7CiAgICBwYWRkaW5nLWxlZnQ6IDMycHg7CiAgICBwYWRkaW5nLXJpZ2h0OiAzMnB4OwogIH0KfQoKQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogNzY4cHgpIGFuZCAobWF4LXdpZHRoOiAxNDM5cHgpIHsKICAuY29udGFpbmVyIHsKICAgIG1heC13aWR0aDogNzY4cHg7CiAgICBwYWRkaW5nLWxlZnQ6IDMycHg7CiAgICBwYWRkaW5nLXJpZ2h0OiAzMnB4OwogIH0KfQoKQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogMTQ0MHB4KSB7CiAgLmNvbnRhaW5lciB7CiAgICBtYXgtd2lkdGg6IDE0NDBweDsKICB9CiAgc2VjdGlvbiB7CiAgICBwYWRkaW5nLWJvdHRvbTogMTY0cHg7CiAgfQogIC5mb290ZXIgewogICAgcGFkZGluZy1ib3R0b206IDE2OXB4OwogIH0KfQo="
+      as="style"
+      media="print"
+      onload="this.onload=null;this.removeAttribute('media');"
+    />
     <script type="module" crossorigin src="/project_portfolio_codecrafters/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project_portfolio_codecrafters/assets/vendor-1d5ddc5a.js">
     <link rel="stylesheet" href="/project_portfolio_codecrafters/assets/vendor-f53b51ae.css">
-    <link rel="stylesheet" href="/project_portfolio_codecrafters/assets/index-4d5672ae.css">
   </head>
 
   <body>
